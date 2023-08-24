@@ -24,7 +24,7 @@ body{
     flex-direction: column; /* Agrega esta línea para mostrar los elementos en una columna */
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Agrega esto para ocupar todo el viewport vertical */
+    height: 85vh; /* Agrega esto para ocupar todo el viewport vertical */
     background-color: #f2f2f2;
 }
 
