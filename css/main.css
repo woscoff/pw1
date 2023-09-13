@@ -18,41 +18,76 @@ body{
 	margin: 0 auto;
 }
 
-/* Vista Login */
-.login{
+a{
+    font-size: 1.1rem;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* HEADER */
+.headerIndex{
     display: flex;
-    flex-direction: column; /* Agrega esta línea para mostrar los elementos en una columna */
-    justify-content: center;
     align-items: center;
-    height: 85vh; /* Agrega esto para ocupar todo el viewport vertical */
-    background-color: #f2f2f2;
+    justify-content: space-between;
+    height: 7rem;
+    grid-area: header;
 }
 
-label{
-	font-size: 1.7rem;
+.title{
+    display: flex;
+    justify-content: left;
+    font-size: 3rem;
+    margin-left: 8rem;
 }
 
-input{
-	height: 4rem;
-	width: 30rem;
-	margin-top: 0.5rem;
-	margin-bottom: 1.6rem;
+.usuario{
+    padding: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    flex-direction: column;
 }
 
-.buttonLog{
-	height: 3rem;
-	width: 30rem;
+.fotoUsuario{
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1rem;
 }
 
-.linkRegister{
-	margin-top: 1rem;
-	font-size: 1.5rem;
+
+/* NAVBAR */
+.navbar {
+    margin-right: auto;
+    grid-area: navbar;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.linkPremium{
-	margin-bottom: 1rem;
-	font-size: 1.5rem;
+.navbar li {
+    border: 1px solid #333;
+    padding: 3.4rem;
 }
+
+.navbar li a {
+    font-size: 1.5rem;
+    margin-right: 15rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 
 /* Estilos para el footer */

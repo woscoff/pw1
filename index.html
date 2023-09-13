@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>SPOTILAM</title>
 </head>
 <body>
-    
+    <section class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Mis albums</a></li>
+                <li><a href="#">Mis favoritas</a></li>
+            </ul>
+            
+        </nav>
+        
+        <header class="headerIndex">
+            <h1 class="title">SPOTILAM</h1>
+            <section class="usuario">
+                <h2>Usuario</h2>
+                <a href="#">Cerrar Sesion</a>
+            </section>
+            <img src="assets/foto-usuario.webp" alt="foto del usuario" class="fotoUsuario">
+        </header>
+
+        <section class="contenedorAlbumDescripcion">
+                <img src="assets/fooFightersAlbum.jpg" alt="album de foo fighters" class="albumSonando">
+                <p class="albumText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore vel voluptatibus. Quod eligendi distinctio sunt corporis consequatur sed quis, earum veritatis maiores reprehenderit aut, esse voluptatum doloribus placeat architecto!</p>
+            </section>
+
+        <main class="albumesConReproductor">
+            <section class="albumes">
+                <img src="assets/ramonesAlbum.jpg" alt="" class="imgAlbumes">
+                <img src="assets/beatlesAlbum.jpg" alt="" class="imgAlbumes">
+                <img src="assets/queenAlbum.jpeg" alt="" class="imgAlbumes">
+                <img src="assets/redhotAlbum.jpg" alt="" class="imgAlbumes">
+                <img src="assets/fooFightersAlbum.jpg" alt="" class="imgAlbumes">
+                <img src="assets/pinkFloydAlbum.svg" alt="" class="imgAlbumes">
+            </section>
+            <audio controls class="audio">
+                <source src="mi_audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </main>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="participants">
+                <h3>Participantes del Proyecto</h3>
+                <ul>
+                    <li>Nombre Participante 1  //  Nombre Participante 2</li>
+                    <li>Nombre Participante 3  //  Nombre Participante 4</li>
+                </ul>
+            </div>
+            <nav class="footer-nav">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Programacion Web 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
