@@ -12,6 +12,10 @@
     background-color: #f2f2f2;
 }
 
+.home{
+    background-color: #c7c7c7;
+}
+
 /* DEBAJO DEL NAV */
 .albumSonando{
     width: 31.2rem;
@@ -23,6 +27,11 @@
     grid-area: contenedorAlbumDescripcion;
 }
 
+.albumText{
+    padding-right: 4rem;
+}
+
+
 .albumes {
     grid-area: albumesConReproductor;
     display: grid;
@@ -33,17 +42,29 @@
     justify-content: space-between;
     gap: 2rem;
     padding: 2rem;
-    grid-template-rows: auto auto; /* Esto asegura que las filas se ajusten automáticamente al contenido */
-}
-
-.albumText{
-    padding-right: 4rem;
+    grid-template-rows: auto auto; 
 }
 
 .imgAlbumes{
-    width: 95%; 
-    height: 90%;
+
+    width: 100%; 
+    height: auto;
     object-fit: cover; 
+    position: relative;
+}
+
+.imgContainer {
+    position: relative;
+    width: 100%;
+}
+
+.fav{
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 4rem; 
+    width: 4rem; 
 }
 
 .audio{
