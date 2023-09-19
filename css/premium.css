@@ -1,0 +1,107 @@
+.planes img {
+    width: 280px;
+    margin: 20px 10px;
+    align-self: center;
+    object-fit: cover;
+}
+
+.planes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    align-items: flex-start;
+}
+
+.item1{
+    order: 1;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(175, 173, 173);
+}
+
+.item2{
+    order: 2;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(175, 173, 173);
+}
+
+.item3{
+    order: 3;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(175, 173, 173);
+}
+
+.planes h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 5px;
+    margin: 1px;
+    font-size: 30px;
+    align-self: center;
+}
+
+.planes h3 {
+    border-top: 1px solid black;
+    margin: 5px;
+    color: black;
+    font-weight: lighter;
+    font-size: 13px;
+    padding: 1%;
+}
+
+.planes h4 {
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+}
+
+input{
+    align-self: center;
+    transform: scale(1.5);
+}
+
+.botones button{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: lighter;
+    font-size: 26px;
+    margin: 15px;
+    padding: 1%;
+    border-top: 1px solid rgb(130, 128, 128);
+    justify-content: space-around;
+    background-color: white;
+    height: 60px;
+    width: 300px;
+}
+
+.botones{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    align-items: flex-start;
+}

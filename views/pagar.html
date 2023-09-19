@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pagar.css">
+    <title>Pagar</title>
+</head>
+<body>
+    <section class="container">
+        <header class="headerIndex">
+            <section class="usuario">
+                <h2>Usuario</h2>
+                <a href="#">Cerrar Sesion</a>
+            </section>
+            <img src="..\assets\foto-usuario.webp" alt="foto del usuario" class="fotoUsuario">
+        </header>
+        <section class="planeElegido"> 
+            <article>
+                <img src="../assets/LogosPremium/nombre plan 2.png" alt="planAPagar">
+            </article>
+            <article class="plan">
+                <h4 class="titulo">Elegiste el plan NOMBRE DEL PLAN</h4>
+                <p>
+                    Elegiste el mejor plan para vos y toda tu familia, no hay nada mejor que Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id quo accusamus ut atque aut, harum magni aliquam necessitatibus?Vero id quo accusamus ut atque aut, harum magni aliquam necessitatibus? Tempora, maiores quo veritatis eaque quaerat quasi velit maxime delectus vel!Vero id aliquam necessitatibus? Tempora, maiores quo veritatis eaque quaerat quasi velit maxime delectus vel!Vero id quo accusamus ut atque aut, harum magni aliquam necessitatibus? Tempora, maiores quo veritatis eaque quaerat quasi velit maxime delectus vel!Vero id quo accusamus ut atque aut, harum magni aliquam necessitatibus? Tempora, maiores quo veritatis eaque quaerat quasi velit maxime delectus vel!Vero id quo accusamus ut atque aut, harum magni aliquam necessitatibus? Tempora, maiores quo veritatis eaque quaerat quasi velit maxime delectus vel!Vero id quo accusamus ut atque aut, harum magni aliquam necessitatibus? Tempora, maiores quo veritatis eaque quaerat quasi velit maxime delectus vel! Tempora, maiores quo veritatis eaque quaerat quasi velit maxime delectus vel!. Como siempre muy agradecidos con tu compra y esperamos que sea lo que esperabas y porque no mas!.
+                </p>
+            </article>
+        </section>
+        <section>
+            <form action="#" method="post" class="pago">
+                <article class="item1">
+                    <label>Numero de Tarjeta:</label>
+                    <input pattern="[0-9]{16}" name="numero" title="Incerte su numero de Tarjeta"placeholder="**** **** **** ****">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" placeholder="Name">
+                </article>
+                <article class="item2">
+                    <label>VTO</label> 
+                    <input pattern="[0-9]{4}" name="vencimiento" title="Incerte la fecha de vencimiento marcados en su Tarjeta" placeholder="**/**">
+                    <label>CVC</label>
+                    <input pattern="[0-9]{3}" name="vencimiento" title="Incerte los 3 numeros en el dorso de su Tarjeta" placeholder="***">
+                </article>
+                <article class="botones">
+                    <button class="button" href="views\inicio.html">Cancelar</button>
+                    <button class="button" href="views\inicio.html">Pagar</button>
+                </article>
+            </form>
+        </section>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="participants">
+                <h3>Participantes del Proyecto</h3>
+                <ul>
+                    <li>Nombre Participante 1  //  Nombre Participante 2</li>
+                    <li>Nombre Participante 3  //  Nombre Participante 4</li>
+                </ul>
+            </div>
+            <nav class="footer-nav">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Programacion Web 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
