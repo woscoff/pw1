@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/perfil.css">
-    <title>Document</title>
+    <title>Perfil</title>
 </head>
 <body>
     <nav>
@@ -14,28 +15,29 @@
                     <div><h2>nombre de usuario</h2></div>
                     <div><h5><a href="login.html">iniciar sesion</a></h5></div>
                 </div>
-                <div class="img-usuario"><img src="../assets/foto-usuario.webp" alt=""></div>
+                <div class="img-usuario"><img class="img" src="../assets/foto-usuario.webp" alt=""></div>
             </div>
         </div>
     </nav>
     <main>
         <div class="form-contenedor">
             <form action="">
-                <p><label for="nombre">nombre</label>
+                <p><label class="label" for="nombre">nombre</label>
                 <input id="nombre" type="text" placeholder="ingrese su nombre"></p>
-               <p> <label for="contraceña">contraceña</label>
+               <p> <label class="label" for="contraceña">contraceña</label>
                 <input id="contraceña" type="password" placeholder="ingrese una contraceña"></p>
-                <p><label for="repetir-contraceña">repetir-contraceña</label>
-                <input id="repetir-contraceña" type="password" placeholder="ingrese nuevamente contraceña"></p>
-                <p><label for="fecha-nacimiento">fecha de nacimiento</label>
+                <p><label class="label" for="repetir-contraceña">repetir-contraceña</label>
+                <input id="repetir-contraceña" type="password" placeholder="repita contraceña"></p>
+                <p><label class="label" for="fecha-nacimiento">fecha de nacimiento</label>
                 <input id="fecha-nacimiento" type="date"></p>
-                <p><label for="email">email</label>
+                <p><label class="label" for="email">email</label>
                 <input id="email" type="email" placeholder="ingrese email"></p>
                 <div class="opciones">
                 <div class="premium"><a href="premium.html">premium</a></div>
-                <div class="elimina-usuario"><a href="inicio.html">elimina usuario</a></div></div>
+                <div class="elimina-usuario"><a href="login.html">elimina usuario</a></div>
+                </div>
                 <div class="buttons">
-                    <button><a href="inicio.html">Volver al home</a></button>
+                    <button><a href="../index.html">Volver al home</a></button>
                     <button>guardar</button>
                 </div>
             </form>
