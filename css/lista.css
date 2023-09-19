@@ -1,0 +1,44 @@
+
+.listaFavorita {
+    height: 70vh;
+    overflow-x: scroll;
+    padding: 2rem 0;
+    margin: 0 1rem; 
+}
+
+.cancionFavorita table {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.25rem;
+}
+
+.cancionFavorita table th,
+.cancionFavorita table td {
+    padding: 25px 50px;
+    border: 1px solid #ccc;
+}
+
+.cancionFavorita table th {
+    background-color: #d9d9d9;
+    padding: 25px;
+    font-size: 1.5rem;
+
+}
+
+.imgAlbumesLista {
+    width: 15rem;
+}
+.imgReproduccion{
+    width: 4.25rem;
+}
+.textoTabla {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.favList{
+    position: absolute;
+    top: -12px;
+    right: -2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
