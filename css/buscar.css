@@ -12,8 +12,15 @@
     background-color: #f2f2f2;
 }
 
-.home{
+.buscar{
     background-color: #c7c7c7;
+}
+
+.buscador{
+    width: 70%;
+    height: 50%;
+    margin-left: 2rem;
+    border-radius: 15px;
 }
 
 /* DEBAJO DEL NAV */
