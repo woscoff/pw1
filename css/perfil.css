@@ -22,7 +22,9 @@ body{
     height: 100%;
 }
 
-
+.usuario .link{
+    font-size: medium;
+}
 
 
 .form-contenedor {
