@@ -1,0 +1,85 @@
+.contenedor 
+{
+    display: grid;
+    grid-template-columns: 17% 80%;
+    grid-template-rows: 7% 25% auto;
+    height: 90vh;
+    grid-template-areas: 
+    "navbar header"
+    "navbar albums" 
+    "navbar albums" 
+    "albumsonando albums";
+    gap: 1rem; 
+    padding: 1rem;
+}
+.misalbums
+{
+    background-color: #c7c7c7;
+}
+.albums
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2.5em;
+    gap: 2em;
+    width: 100%;
+    height: 70vh;
+    overflow: scroll;
+}
+.box-img
+{
+    width: 100%;
+    position: relative;
+}
+.img-album
+{
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    position: relative;
+}
+.favo-album
+{
+    display: flex;
+    position: absolute;
+    top: 5px; 
+    right: 10px;
+    width: 10%;
+    height: 5vh;
+    object-fit: cover;
+}
+.audio
+{
+    top: 1em;
+    width: 100%;
+    padding: 2.6em;
+}
+.contenedor-album-sonando
+{
+    grid-area: albumsonando;
+    width: 100%;
+    height: 80vh;
+    padding: 1em;
+}
+.img-album
+{
+    display: flex;
+    position: relative;
+}
+.imgContainer
+{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.favo-sonando
+{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    width: 10%;
+    height: 5vh;
+}
+   
+ 

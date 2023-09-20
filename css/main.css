@@ -86,9 +86,10 @@ p{
     text-decoration: none;
     color: black;
 }
-
-
-
+li:hover
+{
+    background-color: rgb(69, 129, 127)
+}
 
 /* Estilos para el footer */
 .footer {
