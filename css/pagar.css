@@ -30,7 +30,7 @@
     box-shadow: 0px 0px 10px rgb(175, 173, 173);
 }
 
-.botones button{
+/* .botones button{
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-weight: lighter;
@@ -42,9 +42,10 @@
     background-color: white;
     height: 60px;
     width: 300px;
-}
+} */
 
-.botones{
+
+/* .botones{
     align-self: center;
     display: flex;
     flex-direction: row;
@@ -52,7 +53,7 @@
     justify-content: space-evenly;
     max-width: 100%;
     align-items: flex-start;
-}
+} */
 
 .planeElegido h2 {
     font-family: 'Montserrat', sans-serif;
