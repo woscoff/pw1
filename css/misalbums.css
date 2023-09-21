@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: 17% 80%;
-    grid-template-rows: 7% 25% auto;
+    grid-template-rows: 7% 25%  auto;
     height: 90vh;
     grid-template-areas: 
     "navbar header"
@@ -53,13 +53,14 @@
 {
     top: 1em;
     width: 100%;
-    padding: 2.6em;
+    margin: 2.6em 0;
 }
 .contenedor-album-sonando
 {
+
     grid-area: albumsonando;
     width: 100%;
-    height: 80vh;
+    height:auto;
     padding: 1em;
 }
 .img-album
