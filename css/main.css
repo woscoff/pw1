@@ -36,6 +36,14 @@ p{
     grid-area: header;
 }
 
+.link{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
 .title{
     display: flex;
     justify-content: left;
@@ -58,6 +66,47 @@ p{
     margin-right: 1rem;
 }
 
+@media (max-width: 700px){
+    .fotoUsuario{
+        width: 10rem;
+        height: 10rem;
+        margin-top: 4rem;
+    }
+    .usuario{
+        margin-top: 4rem;
+    }
+    .link{
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 500px){
+    .fotoUsuario{
+        width: 12rem;
+        height: 12rem;
+        margin-top: 6rem;
+    }
+    .usuario{
+        margin-top: 6rem;
+    }
+    .link{
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 400px){
+    .fotoUsuario{
+        width: 15rem;
+        height: 15rem;
+        margin-top: 8rem;
+    }
+    .usuario{
+        margin-top: 8rem;
+    }
+    .link{
+        font-size: 3.5rem;
+    }
+}
 
 /* NAVBAR */
 .navbar {
@@ -91,12 +140,91 @@ li:hover
     background-color: rgb(69, 129, 127)
 }
 
+@media (max-width: 1900px){
+    .navbar{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 1640px){
+    .navbar{
+        width: 28rem;
+    }
+}
+
+@media (max-width: 1430px){
+    .navbar{
+        width: 25rem;
+    }
+}
+
+@media (max-width: 1290px){
+    .navbar{
+        width: 97%;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    .navbar li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem;
+        width: 100%;
+    }
+    .navbar li a {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1110px){
+    .navbar{
+        width: 30%;
+    }
+    .navbar ul {
+        width: 80%;
+        height: 7rem;
+    }
+}
+
+@media (max-width: 700px){
+    .navbar ul {
+        height: 12rem;
+    }
+    .navbar li a {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .navbar ul {
+        height: 12rem;
+    }
+    .navbar li a {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 450px){
+    .navbar ul {
+        height: 16rem;
+    }
+    .navbar li a {
+        font-size: 3.2rem;
+    }
+}
+
 /* Estilos para el footer */
 .footer {
+    grid-area: footer;
     background-color: #333;
     color: white;
     padding: 30px 0;
-	
+    width: 100%;
 }
 
 .footer-content {
@@ -153,18 +281,94 @@ li:hover
     color: white;
     text-decoration: none;
 }
+
+@media(max-width: 820px){
+    .footer{
+        height: 120%;
+    }
+    .footer-content{
+        max-width: 1500px;
+    }
+    .footer-bottom p {
+        font-size: 1.8rem;
+    }
+    .footer-nav {
+        font-size: 1.5rem;
+    }
+    .footer-nav a {
+        font-size: 1.5rem;
+    }
+    .participants h3 {
+        font-size: 1.5rem;
+    }
+    .participants li {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 700px){
+    .footer-bottom p {
+        font-size: 2rem;
+    }
+    .footer-nav {
+        font-size: 2rem;
+    }
+    .footer-nav a {
+        font-size: 2rem;
+    }
+    .participants h3 {
+        font-size: 2rem;
+    }
+    .participants li {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 450px){
+    .footer-bottom p {
+        font-size: 2.5rem;
+    }
+    .footer-nav {
+        font-size: 2.5rem;
+    }
+    .footer-nav a {
+        font-size: 2.5rem;
+    }
+    .participants h3 {
+        font-size: 2.5rem;
+    }
+    .participants li {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 400px){
+    .footer-bottom p {
+        font-size: 3rem;
+    }
+    .footer-nav {
+        font-size: 3rem;
+    }
+    .footer-nav a {
+        font-size: 3rem;
+    }
+    .participants h3 {
+        font-size: 3rem;
+    }
+    .participants li {
+        font-size: 3rem;
+    }
+}
+
 /* estilo para las imagenes */
 img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.link{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-size: 26px;
-    text-decoration: none;
-}
+
+
+
 .botones{
     align-self: center;
     display: flex;
