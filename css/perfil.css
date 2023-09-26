@@ -6,6 +6,9 @@
 body{
     background-color: #f2f2f2;
 }
+nav{
+    margin: 10px 0;
+}
 .usuario {
     flex-direction: row;
     justify-content: end;
@@ -42,7 +45,20 @@ body{
     align-items: start;
     justify-content: space-evenly;
     margin: auto;
-
+}
+@media(max-width:1475px){
+    .form-contenedor form{
+        width: 70%;
+        align-items: center;
+   
+    }
+}
+@media(max-width:1051px){
+    .form-contenedor form{
+        width: 100%;
+        align-items: center;
+        
+    }
 }
 
 .form-contenedor form>p {
@@ -54,6 +70,7 @@ body{
    
 
 }
+
 .form-contenedor form p>input {
 
    width: 50%;
@@ -66,4 +83,46 @@ body{
     justify-content: space-around;
     width: 50%;
     margin: 20px;
+}
+.button{
+    background-color: #c6ac8f;
+    height: 5rem;
+    border-radius:10px ;
+    padding: 1rem;
+    box-shadow: 0px 2px 10px white;
+} 
+.button:hover{
+    background-color: #c0986b;
+    height: 5rem;
+    border-radius:10px ;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px #c0986b;
+} 
+@media(max-width:750px){
+
+    .form-contenedor form>p{
+        width: 90%;
+   
+    }
+    .button a{
+        font-size: medium;
+    }
+}
+@media(max-width:550px){
+
+   .botones{
+    display: flex;
+    flex-direction: column;
+   }
+   .contenedor-btn{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer-content{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer-nav{
+    margin: 0;
+   }
 }
