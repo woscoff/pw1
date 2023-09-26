@@ -6,28 +6,28 @@
     grid-template-areas: 
     "navbar header"
     "navbar albumesConReproductor"
-    "contenedorAlbumDescripcion albumesConReproductor";
+    "contenedorAlbumDescripcion albumesConReproductor"
+    "footer footer";
     gap: 1rem; 
     padding: 1rem;
     background-color: #f2f2f2;
+    color: #c7c7c7;
+    font-size: larger;
 }
 
-@media (max-width: 1290px){
-    .container{
-        grid-template-rows: 8% 10%;
-        grid-template-columns: 0;
-        grid-template-areas: 
-        "header header header"
-        "navbar navbar navbar"
-        "albumesConReproductor albumesConReproductor albumesConReproductor"
-        "contenedorAlbumDescripcion contenedorAlbumDescripcion contenedorAlbumDescripcion";
-        height: 100%;
-    }
-}
 
-.home{
+.inicio{
     background-color: #c7c7c7;
 }
+
+.buscador{
+    width: 70%;
+    height: 70%;
+    margin-left: 2rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
 
 /* DEBAJO DEL NAV */
 .albumSonando{
@@ -35,47 +35,12 @@
     position: relative;
 }
 
-@media (max-width: 1900px){
-    .albumSonando{
-        width: 30rem;
-    }
-}
 
-@media (max-width: 1640px){
-    .albumSonando{
-        width: 28rem;
-    }
-}
 
-@media (max-width: 1430px){
-    .albumSonando{
-        width: 25rem;
-    }
-}
 
-@media (max-width: 1290px){
-    .albumSonando{
-        width: 25rem;
-    }
-}
 
-@media (max-width: 700px){
-    .albumSonando{
-        width: 30rem;
-    }
-}
 
-@media (max-width: 500px){
-    .albumSonando{
-        width: 35rem;
-    }
-}
 
-@media (max-width: 450px){
-    .albumSonando{
-        width: 40rem;
-    }
-}
 
 .contenedorAlbumDescripcion{
     margin-top: 4rem;
@@ -83,50 +48,21 @@
     grid-area: contenedorAlbumDescripcion;
 }
 
-@media (max-width: 1290px){
-    .contenedorAlbumDescripcion{
-        margin-top: 0;
-        display: flex;
-        flex-direction: row;
-    }
-}
 
 .albumText{
     padding-right: 4rem;
 }
 
-@media (max-width: 1290px){
-    .albumText{
-        text-align: center;
-        margin-top: 8%;
-    }
-}
 
-@media (max-width: 840px){
-    .albumText{
-        text-align: center;
-        font-size: 1.8rem;
-    }
-}
 
-@media (max-width: 600px){
-    .albumText{
-        text-align: center;
-        font-size: 2.2rem;
-    }
-}
-@media (max-width: 450px){
-    .albumText{
-        text-align: center;
-        font-size: 2.5rem;
-    }
-}
+
+
 
 .albumes {
     grid-area: albumesConReproductor;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 138rem;
+    width: 95%;
     height: 70vh;
     overflow-x: scroll;
     justify-content: space-between;
@@ -135,96 +71,18 @@
     grid-template-rows: auto auto; 
 }
 
-@media (max-width: 1290px){
-    .albumes{
-        grid-template-columns: repeat(3, 1fr);
-        width: 125rem;
-        height: 60vh;
-    }
-}
 
-@media (max-width: 1260px){
-    .albumes{
-        width: 115rem;
-        margin-left: 3rem;
-    }
-}
 
-@media (max-width: 1205px){
-    .albumes{
-        width: 90rem;
-        margin-left: 12rem;
-    }
-}
 
-@media (max-width: 1110px){
-    .albumes{
-        width: 85rem;
-        margin-left: 12rem;
-    }
-}
 
-@media (max-width: 1110px){
-    .albumes{
-        width: 85rem;
-        margin-left: 12rem;
-    }
-}
 
-@media (max-width: 1000px){
-    .albumes{
-        grid-template-columns: repeat(2, 1fr);
-        height: 70vh;
-    }
-}
 
-@media (max-width: 800px){
-    .albumes{
-        grid-template-columns: repeat(2, 1fr);
-        height: 80vh;
-    }
-}
 
-@media (max-width: 700px){
-    .albumes{
-        grid-template-columns: repeat(1, 1fr);
-        height: 120vh;
-        width: 75rem;
-        margin-left: 21rem;
-    }
-}
 
-@media (max-width: 590px){
-    .albumes{
-        height: 130vh;
-        width: 90rem;
-        margin-left: 15rem;
-    }
-}
 
-@media (max-width: 500px){
-    .albumes{
-        height: 165vh;
-        width: 88rem;
-        margin-left: 19rem;
-    }
-}
 
-@media (max-width: 450px){
-    .albumes{
-        height: 185vh;
-        width: 85rem;
-        margin-left: 25rem;
-    }
-}
 
-@media (max-width: 400px){
-    .albumes{
-        height: 210vh;
-        width: 85rem;
-        margin-left: 25rem;
-    }
-}
+
 
 .imgAlbumes{
     width: 100%; 
@@ -233,17 +91,19 @@
     position: relative;
 }
 
-@media (max-width: 1290px){
-    .imgAlbumes{
-        width: 90%;
-        height: 90%;
-    }
-}
+
 
 .imgContainer {
     position: relative;
     width: 100%;
 }
+
+.imgContainerSonando{
+    position: relative;
+    width: 100%;
+}
+
+
 
 .fav{
     position: absolute;
@@ -253,68 +113,223 @@
     width: 4rem; 
 }
 
+
 .favAlbumSonando{
     position: absolute;
     top: 10px;
     right: 6.5rem;
     height: 4rem; 
-    width: 4rem;
+    width: 4rem; 
 }
 
+
+.audio{
+    top: 1em;
+    width: 92%;
+    margin: 2.6em 0;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f8f8f8; 
+}
+
+
+
+
+
 @media (max-width: 1290px){
+    .container{
+        grid-template-rows: 8% 10%;
+        grid-template-columns: 0;
+        grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "albumesConReproductor albumesConReproductor albumesConReproductor"
+        "contenedorAlbumDescripcion contenedorAlbumDescripcion contenedorAlbumDescripcion"
+        "footer footer footer";
+        height: 100%;
+    }
+    .albumSonando{
+        width: 25rem;
+    }
+    .contenedorAlbumDescripcion{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .albumText{
+        text-align: center;
+        margin-top: 8%;
+    }
+    .albumes{
+        grid-template-columns: repeat(3, 1fr);
+        width: 125rem;
+        height: 60vh;
+    }
+    .imgAlbumes{
+        width: 90%;
+        height: 90%;
+    }
+    .imgContainerSonando{
+        width: 30%;
+    }
     .favAlbumSonando{
         top: 10px;
         right: 1rem;
     }
-}
-
-.audio{
-    width: 70rem;
-    margin-left: 20%;
-}
-
-@media (max-width: 1290px){
+    
     .audio{
         margin-left: 5rem;
         width: 115rem;
     }
 }
-
 @media (max-width: 1260px){
+    .albumes{
+        width: 115rem;
+        margin-left: 3rem;
+    }
     .audio{
         width: 105rem;
     }
 }
-
+@media (max-width: 1900px){
+    .albumSonando{
+        width: 30rem;
+    }
+}
+@media (max-width: 1640px){
+    .albumSonando{
+        width: 28rem;
+    }
+}
+@media (max-width: 1430px){
+    .albumSonando{
+        width: 25rem;
+    }
+}
 @media (max-width: 1205px){
+    .albumes{
+        width: 90rem;
+        margin-left: 12rem;
+    }
     .audio{
         width: 90rem;
         margin-left: 12rem;
     }
 }
-
 @media (max-width: 1110px){
+    .albumes{
+        width: 85rem;
+        margin-left: 12rem;
+    }
     .audio{
         width: 85rem;
         margin-left: 11rem;
     }
 }
-
+@media (max-width: 1000px){
+    .albumes{
+        grid-template-columns: repeat(2, 1fr);
+        height: 70vh;
+    }
+}
+@media (max-width: 840px){
+    .albumText{
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 800px){
+    .albumes{
+        grid-template-columns: repeat(2, 1fr);
+        height: 80vh;
+    }
+}
 @media (max-width: 700px){
+    .buscador{
+        width: 60%;
+        height: 70%;
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+    .albumSonando{
+        width: 30rem;
+    }
+    .albumes{
+        grid-template-columns: repeat(1, 1fr);
+        height: 120vh;
+        width: 75rem;
+        margin-left: 21rem;
+    }
     .audio{
         height: 6rem; 
     }
 }
-
+@media (max-width: 600px){
+    .buscador{
+        width: 60%;
+        height: 80%;
+        margin-top: 3rem;
+        font-size: 3rem;
+    }
+    .albumText{
+        font-size: 2.2rem;
+    }
+}
 @media (max-width: 590px){
+    .albumes{
+        height: 130vh;
+        width: 90rem;
+        margin-left: 15rem;
+    }
     .audio{
         margin-left: 13rem;
     }
 }
-
+@media (max-width: 500px){
+    .buscador{
+        width: 60%;
+        height: 120%;
+        margin-top: 6rem;
+        font-size: 3.5rem;
+    }
+    .albumSonando{
+        width: 35rem;
+    }
+    .albumes{
+        height: 165vh;
+        width: 88rem;
+        margin-left: 19rem;
+    }
+}
 @media (max-width: 450px){
+    .albumSonando{
+        width: 40rem;
+    }
+    .albumText{
+        font-size: 2.5rem;
+    }
+    .albumes{
+        height: 185vh;
+        width: 85rem;
+        margin-left: 25rem;
+    }
     .audio{
         margin-left: 18rem;
     }
 }
+@media (max-width: 400px){
+    .buscador{
+        width: 50%;
+        height: 140%;
+        margin-top: 12rem;
+        font-size: 4rem;
+    }
+    .albumes{
+        height: 210vh;
+        width: 85rem;
+        margin-left: 25rem;
+    }
+}
+
+
+
 
