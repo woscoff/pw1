@@ -326,16 +326,6 @@
     }
 }
 
-.favo-album{
-    display: flex;
-    position: absolute;
-    top: 5px; 
-    right: 10px;
-    width: 10%;
-    height: 5vh;
-    object-fit: cover;
-}
-
 .audio{
     top: 1em;
     width: 92%;
