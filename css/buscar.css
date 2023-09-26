@@ -130,6 +130,14 @@
     grid-area: contenedorAlbumDescripcion;
 }
 
+@media (max-width: 1290px){
+    .contenedorAlbumDescripcion{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .albumText{
     padding-right: 4rem;
 }
@@ -155,14 +163,6 @@
 @media (max-width: 450px){
     .albumText{
         font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 1290px){
-    .contenedorAlbumDescripcion{
-        margin-top: 0;
-        display: flex;
-        flex-direction: row;
     }
 }
 
@@ -326,6 +326,16 @@
     }
 }
 
+.favo-album{
+    display: flex;
+    position: absolute;
+    top: 5px; 
+    right: 10px;
+    width: 10%;
+    height: 5vh;
+    object-fit: cover;
+}
+
 .audio{
     top: 1em;
     width: 92%;
@@ -334,6 +344,7 @@
     border-radius: 10px; 
     background-color: #f8f8f8; 
 }
+
 @media (max-width: 1290px){
     .audio{
         margin-left: 5rem;

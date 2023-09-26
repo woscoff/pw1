@@ -1,5 +1,4 @@
-.contenedor 
-{
+.contenedor {
     display: grid;
     grid-template-columns: 17% 80%;
     grid-template-rows: 7% 25%  auto;
@@ -12,12 +11,25 @@
     gap: 1rem; 
     padding: 1rem;
 }
-.misalbums
-{
+
+@media (max-width: 1290px){
+    .container{
+        grid-template-rows: 8% 10%;
+        grid-template-columns: 0;
+        grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "albums albums albums"
+        "albumsonando albumsonando albumsonando";
+        height: 100%;
+    }
+}
+
+.misalbums{
     background-color: #c7c7c7;
 }
-.albums
-{
+
+.albums{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -27,20 +39,118 @@
     height: 70vh;
     overflow: scroll;
 }
-.box-img
-{
+
+@media (max-width: 1290px){
+    .albums{
+        grid-template-columns: repeat(3, 1fr);
+        width: 125rem;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 1260px){
+    .albums{
+        width: 115rem;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 1205px){
+    .albums{
+        width: 90rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1110px){
+    .albums{
+        width: 85rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1110px){
+    .albums{
+        width: 85rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .albums{
+        grid-template-columns: repeat(2, 1fr);
+        height: 70vh;
+    }
+}
+
+@media (max-width: 800px){
+    .albums{
+        grid-template-columns: repeat(2, 1fr);
+        height: 80vh;
+    }
+}
+
+@media (max-width: 700px){
+    .albums{
+        grid-template-columns: repeat(1, 1fr);
+        height: 120vh;
+        width: 75rem;
+        margin-left: 21rem;
+    }
+}
+
+@media (max-width: 590px){
+    .albums{
+        height: 130vh;
+        width: 90rem;
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width: 500px){
+    .albums{
+        height: 165vh;
+        width: 88rem;
+        margin-left: 19rem;
+    }
+}
+
+@media (max-width: 450px){
+    .albums{
+        height: 185vh;
+        width: 85rem;
+        margin-left: 25rem;
+    }
+}
+
+@media (max-width: 400px){
+    .albums{
+        height: 210vh;
+        width: 85rem;
+        margin-left: 25rem;
+    }
+}
+
+.box-img{
     width: 100%;
     position: relative;
 }
-.img-album
-{
+
+.img-album{
     width: 100%;
     object-fit: cover;
     display: flex;
     position: relative;
 }
-.favo-album
-{
+
+@media (max-width: 1290px){
+    .imgAlbumes{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.favo-album{
     display: flex;
     position: absolute;
     top: 5px; 
@@ -49,38 +159,94 @@
     height: 5vh;
     object-fit: cover;
 }
-.audio
-{
+
+.audio{
     top: 1em;
     width: 100%;
     margin: 2.6em 0;
 }
-.contenedor-album-sonando
-{
 
+@media (max-width: 1290px){
+    .audio{
+        margin-left: 5rem;
+        width: 115rem;
+    }
+}
+
+@media (max-width: 1260px){
+    .audio{
+        width: 105rem;
+    }
+}
+
+@media (max-width: 1205px){
+    .audio{
+        width: 90rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1110px){
+    .audio{
+        width: 85rem;
+        margin-left: 11rem;
+    }
+}
+
+@media (max-width: 700px){
+    .audio{
+        height: 6rem; 
+    }
+}
+
+@media (max-width: 590px){
+    .audio{
+        margin-left: 13rem;
+    }
+}
+
+@media (max-width: 450px){
+    .audio{
+        margin-left: 18rem;
+    }
+}
+
+/*LO DE ABAJO ESTA MAL PERO NO PUDE ENCONTRAR EL PORQUE :C */
+.contenedor-album-sonando{
     grid-area: albumsonando;
     width: 100%;
     height:auto;
     padding: 1em;
 }
-.img-album
-{
-    display: flex;
-    position: relative;
+
+@media (max-width: 1290px){
+    .contenedor-album-sonando{
+        top: 10px;
+        right: 1rem;
+        flex-direction: row;
+    }
 }
-.imgContainer
-{
+/*LO DE ARRIBA ESTA MAL PERO NO PUDE ENCONTRAR EL PORQUE :C */
+
+.imgContainer{
     width: 100%;
     display: flex;
     position: relative;
 }
-.favo-sonando
-{
+
+.favo-sonando{
     display: flex;
     position: absolute;
     right: 5px;
     width: 10%;
     height: 5vh;
+}
+
+@media (max-width: 1290px){
+    .favo-sonando{
+        top: 10px;
+        right: 1rem;
+    }
 }
    
  

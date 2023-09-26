@@ -12,6 +12,19 @@
     background-color: #f2f2f2;
 }
 
+@media (max-width: 1290px){
+    .container{
+        grid-template-rows: 8% 10%;
+        grid-template-columns: 0;
+        grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "albumesConReproductor albumesConReproductor albumesConReproductor"
+        "contenedorAlbumDescripcion contenedorAlbumDescripcion contenedorAlbumDescripcion";
+        height: 100%;
+    }
+}
+
 .home{
     background-color: #c7c7c7;
 }
@@ -22,16 +35,92 @@
     position: relative;
 }
 
+@media (max-width: 1900px){
+    .albumSonando{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 1640px){
+    .albumSonando{
+        width: 28rem;
+    }
+}
+
+@media (max-width: 1430px){
+    .albumSonando{
+        width: 25rem;
+    }
+}
+
+@media (max-width: 1290px){
+    .albumSonando{
+        width: 25rem;
+    }
+}
+
+@media (max-width: 700px){
+    .albumSonando{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 500px){
+    .albumSonando{
+        width: 35rem;
+    }
+}
+
+@media (max-width: 450px){
+    .albumSonando{
+        width: 40rem;
+    }
+}
+
 .contenedorAlbumDescripcion{
     margin-top: 4rem;
     margin-left: 1rem;
     grid-area: contenedorAlbumDescripcion;
 }
 
+@media (max-width: 1290px){
+    .contenedorAlbumDescripcion{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .albumText{
     padding-right: 4rem;
 }
 
+@media (max-width: 1290px){
+    .albumText{
+        text-align: center;
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 840px){
+    .albumText{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px){
+    .albumText{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 450px){
+    .albumText{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
 
 .albumes {
     grid-area: albumesConReproductor;
@@ -46,11 +135,109 @@
     grid-template-rows: auto auto; 
 }
 
+@media (max-width: 1290px){
+    .albumes{
+        grid-template-columns: repeat(3, 1fr);
+        width: 125rem;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 1260px){
+    .albumes{
+        width: 115rem;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 1205px){
+    .albumes{
+        width: 90rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1110px){
+    .albumes{
+        width: 85rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1110px){
+    .albumes{
+        width: 85rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .albumes{
+        grid-template-columns: repeat(2, 1fr);
+        height: 70vh;
+    }
+}
+
+@media (max-width: 800px){
+    .albumes{
+        grid-template-columns: repeat(2, 1fr);
+        height: 80vh;
+    }
+}
+
+@media (max-width: 700px){
+    .albumes{
+        grid-template-columns: repeat(1, 1fr);
+        height: 120vh;
+        width: 75rem;
+        margin-left: 21rem;
+    }
+}
+
+@media (max-width: 590px){
+    .albumes{
+        height: 130vh;
+        width: 90rem;
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width: 500px){
+    .albumes{
+        height: 165vh;
+        width: 88rem;
+        margin-left: 19rem;
+    }
+}
+
+@media (max-width: 450px){
+    .albumes{
+        height: 185vh;
+        width: 85rem;
+        margin-left: 25rem;
+    }
+}
+
+@media (max-width: 400px){
+    .albumes{
+        height: 210vh;
+        width: 85rem;
+        margin-left: 25rem;
+    }
+}
+
 .imgAlbumes{
     width: 100%; 
     height: auto;
     object-fit: cover; 
     position: relative;
+}
+
+@media (max-width: 1290px){
+    .imgAlbumes{
+        width: 90%;
+        height: 90%;
+    }
 }
 
 .imgContainer {
@@ -71,10 +258,63 @@
     top: 10px;
     right: 6.5rem;
     height: 4rem; 
-    width: 4rem; 
+    width: 4rem;
+}
+
+@media (max-width: 1290px){
+    .favAlbumSonando{
+        top: 10px;
+        right: 1rem;
+    }
 }
 
 .audio{
     width: 70rem;
     margin-left: 20%;
 }
+
+@media (max-width: 1290px){
+    .audio{
+        margin-left: 5rem;
+        width: 115rem;
+    }
+}
+
+@media (max-width: 1260px){
+    .audio{
+        width: 105rem;
+    }
+}
+
+@media (max-width: 1205px){
+    .audio{
+        width: 90rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 1110px){
+    .audio{
+        width: 85rem;
+        margin-left: 11rem;
+    }
+}
+
+@media (max-width: 700px){
+    .audio{
+        height: 6rem; 
+    }
+}
+
+@media (max-width: 590px){
+    .audio{
+        margin-left: 13rem;
+    }
+}
+
+@media (max-width: 450px){
+    .audio{
+        margin-left: 18rem;
+    }
+}
+
