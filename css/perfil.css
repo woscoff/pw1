@@ -12,6 +12,7 @@ body{
     height: 100px;
     width: 100%;
     padding: 0;
+    color: white;
 }
 .usuario>div{
     text-align: center;

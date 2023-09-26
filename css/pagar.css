@@ -14,7 +14,7 @@
 }
 
 .titulo{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .plan{
@@ -57,7 +57,7 @@
 
 .planeElegido h2 {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: white;
     padding: 5px;
     margin: 1px;
     font-size: 30px;
@@ -66,7 +66,7 @@
 
 .planeElegido p {
     margin: 5px;
-    color: black;
+    color: white;
     font-weight: lighter;
     font-size: 13px;
     padding: 1%;
@@ -74,7 +74,7 @@
 
 .planeElegido h4 {
     font-size: 20px;
-    color: black;
+    color: white;
     margin: 10px;
 }
 
@@ -102,4 +102,8 @@
     flex-direction: row;
     width: 50%;
     justify-content: space-evenly;
+}
+label
+{
+    color: white;
 }

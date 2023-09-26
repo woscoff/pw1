@@ -55,7 +55,7 @@
 
 .planes h2 {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: white;
     padding: 5px;
     margin: 1px;
     font-size: 30px;
@@ -65,7 +65,7 @@
 .planes h3 {
     border-top: 1px solid black;
     margin: 5px;
-    color: black;
+    color: white;
     font-weight: lighter;
     font-size: 13px;
     padding: 1%;
@@ -73,7 +73,7 @@
 
 .planes h4 {
     font-size: 20px;
-    color: black;
+    color: white;
     margin: 10px;
 }
 
