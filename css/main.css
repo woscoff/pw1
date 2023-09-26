@@ -16,6 +16,8 @@ body{
 	overflow-x: hidden;
 	min-height: 100vh;
 	margin: 0 auto;
+/* agregado   */
+    background-image: url(../assets/fondonegro.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
 }
