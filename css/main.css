@@ -16,8 +16,11 @@ body{
 	overflow-x: hidden;
 	min-height: 100vh;
 	margin: 0 auto;
+/* agregado*/    
+    background-image: url(../assets/fondonegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 a{
     font-size: 1.1rem;
 }
@@ -25,8 +28,12 @@ a{
 p{
     font-size: 1.2rem;
     font-weight: 600;
+    color: white;
 }
-
+h1
+{
+    color: white;
+}
 /* HEADER */
 .headerIndex{
     display: flex;
@@ -38,7 +45,7 @@ p{
 
 .link{
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: white;
     font-size: 20px;
     text-decoration: none;
 }
@@ -119,6 +126,8 @@ p{
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
+    /* agregado */
+    background-color: #22333b;
 }
 
 .navbar li {
@@ -129,6 +138,7 @@ p{
 .navbar li a {
     font-size: 1.5rem;
     margin-right: 15rem;
+    color: white;
 }
 
 .navbar a {
@@ -221,7 +231,8 @@ li:hover
 /* Estilos para el footer */
 .footer {
     grid-area: footer;
-    background-color: #333;
+/* agregado */   
+    background-color: #22333b;
     color: white;
     padding: 30px 0;
     width: 100%;
