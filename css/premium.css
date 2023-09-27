@@ -81,36 +81,3 @@ input{
     align-self: center;
     transform: scale(1.5);
 }
-/* 
-.botones button{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-weight: lighter;
-    font-size: 26px;
-    margin: 15px;
-    padding: 1%;
-    border-top: 1px solid rgb(130, 128, 128);
-    justify-content: space-around;
-    background-color: white;
-    height: 60px;
-    width: 300px;
-}
-.botones button>a{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-weight: lighter;
-    font-size: 26px;
-    margin: 15px;
-    padding: 1%;
- 
-}
-
-.botones{
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    max-width: 100%;
-    align-items: flex-start;
-} */
