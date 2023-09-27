@@ -1,3 +1,7 @@
+.usuario a{
+        color: white;
+    font-size: medium;
+    }
 .planes img {
     width: 280px;
     margin: 20px 10px;
@@ -8,7 +12,7 @@
 .planes{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
     justify-content: space-evenly;
     max-width: 100%;
     align-items: flex-start;
@@ -80,4 +84,48 @@
 input{
     align-self: center;
     transform: scale(1.5);
+}
+@media (max-width:700px){
+    .usuario{
+        margin: 0;
+    }
+    .usuario a{
+  
+        font-size: x-small;
+        text-align: center;
+    }
+    .headerIndex{
+        /* border: 2px solid white; */
+        margin: 10px;
+        height: 9rem;
+    }
+    .headerIndex h1{
+        text-align: center;
+    }
+    .fotoUsuario{
+
+        margin: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+    .fotoUsuarioPremium{
+        height: 100%;
+    }
+}
+@media(max-width:550px){
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-content .footer-nav{
+        margin: 0;
+    }
+}
+@media (max-width:450px){
+    .headerIndex h1{
+       margin: 0;
+    }
+    .fotoUsuarioPremium{
+        display: none;
+    }
 }
