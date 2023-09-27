@@ -5,19 +5,19 @@
     object-fit: cover;
 }
 
-.planeElegido{
+.planeElegido {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 100%;
     align-items: flex-start;
 }
 
-.titulo{
+.titulo {
     border-bottom: 1px solid white;
 }
 
-.plan{
+.plan {
     margin: 20px;
     border-radius: 5px;
     height: 305px;
@@ -55,7 +55,7 @@
     margin: 10px;
 }
 
-.pago{
+.pago {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +66,7 @@
     font-size: 20px;
 }
 
-.item1{
+.item1 {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -74,75 +74,90 @@
     gap: 15px;
 }
 
-.item2{
+.item2 {
     display: flex;
     flex-direction: row;
     width: 50%;
     justify-content: space-evenly;
 }
-label
-{
+
+label {
     color: white;
 }
-@media (max-width:700px){
-    .usuario{
+
+@media (max-width:700px) {
+    .usuario {
         margin: 0;
     }
-    .usuario a{
-  
+
+    .usuario a {
+
         font-size: x-small;
         text-align: center;
     }
-    .headerIndex{
+
+    .headerIndex {
         justify-content: end;
         margin: 10px;
         height: 9rem;
     }
-    .headerIndex h1{
+
+    .headerIndex h1 {
         text-align: center;
     }
-    .fotoUsuario{
+
+    .fotoUsuario {
         margin: 0;
         width: 100%;
         height: 100%;
         padding: 5px;
     }
-    .fotoUsuarioPremium{
+
+    .fotoUsuarioPremium {
         height: 100%;
         margin: 5px;
     }
 }
-@media(max-width:550px){
-    .form-content{
+
+@media(max-width:550px) {
+    .form-content {
         margin: auto;
     }
-    .form-content .pago .item2{
+
+    .form-content .pago .item2 {
         display: flex;
         flex-direction: column;
     }
 
-    .form-content .pago .item1,.item2{
+    .form-content .pago .item1,
+    .item2 {
         width: 80%;
     }
 
 
-    .footer-content{
+    .footer-content {
         flex-direction: column;
     }
-    .footer-content .footer-nav{
+
+    .footer-content .footer-nav {
         margin: 0;
     }
 }
-@media(max-width:400px){
-    .form-content .pago .item1,.item2{
+
+@media(max-width:400px) {
+
+    .form-content .pago .item1,
+    .item2 {
         width: 100%;
     }
-    .pago .botones button{
+
+    .pago .botones button {
         display: flex;
         height: 3rem;
     }
+
     .pago .botones button a {
-        font-size: small;    
+        font-size: small;
         margin: auto;
     }
 }

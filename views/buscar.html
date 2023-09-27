@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,76 +8,79 @@
     <link rel="stylesheet" href="../css/buscar.css">
     <title>Buscar</title>
 </head>
+
 <body class="container">
-        <nav class="navbar">
-            <ul>
-                <li><a href="../views/index.html">Home</a></li>
-                <li class="buscar"><a href="../views/buscar.html">Buscar</a></li>
-                <li><a href="../views/misalbums.html">Mis albums</a></li>
-                <li><a href="../views/favoritas.html">Mis favoritas</a></li>
-            </ul>
-        </nav>
-        
-        <header class="headerIndex">
-            <input type="search" placeholder="  Search" class="buscador">
-            <section class="usuario">
-                <h2><a class="link" href="perfil.html">Usuario</a></h2>
-                <a class="link"href="login.html">Cerrar Sesion</a>
-            </section>
-            <img src="../assets/foto-usuario.webp" alt="foto del usuario" class="fotoUsuario">
-        </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../views/index.html">Home</a></li>
+            <li class="buscar"><a href="../views/buscar.html">Buscar</a></li>
+            <li><a href="../views/misalbums.html">Mis albums</a></li>
+            <li><a href="../views/favoritas.html">Mis favoritas</a></li>
+        </ul>
+    </nav>
 
-        <section class="contenedorAlbumDescripcion">
-            <div class="imgContainerSonando">
-                <img src="../assets/fooFightersAlbum.jpg" alt="" class="albumSonando">
-                <img src="../assets/estrellaAmarilla.png" alt="" class="favAlbumSonando">
+    <header class="headerIndex">
+        <input type="search" placeholder="  Search" class="buscador">
+        <section class="usuario">
+            <h2><a class="link" href="perfil.html">Usuario</a></h2>
+            <a class="link" href="login.html">Cerrar Sesion</a>
+        </section>
+        <img src="../assets/foto-usuario.webp" alt="foto del usuario" class="fotoUsuario">
+    </header>
+
+    <section class="contenedorAlbumDescripcion">
+        <div class="imgContainerSonando">
+            <img src="../assets/fooFightersAlbum.jpg" alt="" class="albumSonando">
+            <img src="../assets/estrellaAmarilla.png" alt="" class="favAlbumSonando">
+        </div>
+        <p class="albumText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit omnis quaerat, eum asperiores
+            nesciunt excepturi quae necessitatibus perspiciatis, voluptatibus veritatis amet, optio eos! Reprehenderit a
+            ipsum fugit, vero expedita maiores.</p>
+        <!-- <img src="assets/fooFightersAlbum.jpg" alt="album de foo fighters" class="albumSonando"> -->
+    </section>
+
+    <main>
+        <section class="albumes">
+            <div class="imgContainer">
+                <img src="../assets/ramonesAlbum.jpg" alt="" class="imgAlbumes">
             </div>
-            <p class="albumText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit omnis quaerat, eum asperiores nesciunt excepturi quae necessitatibus perspiciatis, voluptatibus veritatis amet, optio eos! Reprehenderit a ipsum fugit, vero expedita maiores.</p>
-                <!-- <img src="assets/fooFightersAlbum.jpg" alt="album de foo fighters" class="albumSonando"> -->
-            </section>
-
-        <main>
-            <section class="albumes">
-                <div class="imgContainer">
-                    <img src="../assets/ramonesAlbum.jpg" alt="" class="imgAlbumes">
-                </div>
-                <div class="imgContainer">
-                    <img src="../assets/beatlesAlbum.jpg" alt="" class="imgAlbumes">
-                </div>
-                <div class="imgContainer">
-                    <img src="../assets/queenAlbum.jpeg" alt="" class="imgAlbumes">
-                </div>
-                <div class="imgContainer">
-                    <img src="../assets/redhotAlbum.jpg" alt="" class="imgAlbumes">
-                </div>
-                <div class="imgContainer">
-                    <img src="../assets/fooFightersAlbum.jpg" alt="" class="imgAlbumes">
-                </div>
-                <div class="imgContainer">
-                    <img src="../assets/pinkFloydAlbum.svg" alt="" class="imgAlbumes">
-                </div>
-                <div class="imgContainer">
-                    <img src="../assets/pinkFloydAlbum.svg" alt="" class="imgAlbumes">
-                </div>
-                <div class="imgContainer">
-                    <img src="../assets/pinkFloydAlbum.svg" alt="" class="imgAlbumes">
-                </div>
-            </section>
-            <!-- <audio controls class="audio">
+            <div class="imgContainer">
+                <img src="../assets/beatlesAlbum.jpg" alt="" class="imgAlbumes">
+            </div>
+            <div class="imgContainer">
+                <img src="../assets/queenAlbum.jpeg" alt="" class="imgAlbumes">
+            </div>
+            <div class="imgContainer">
+                <img src="../assets/redhotAlbum.jpg" alt="" class="imgAlbumes">
+            </div>
+            <div class="imgContainer">
+                <img src="../assets/fooFightersAlbum.jpg" alt="" class="imgAlbumes">
+            </div>
+            <div class="imgContainer">
+                <img src="../assets/pinkFloydAlbum.svg" alt="" class="imgAlbumes">
+            </div>
+            <div class="imgContainer">
+                <img src="../assets/pinkFloydAlbum.svg" alt="" class="imgAlbumes">
+            </div>
+            <div class="imgContainer">
+                <img src="../assets/pinkFloydAlbum.svg" alt="" class="imgAlbumes">
+            </div>
+        </section>
+        <!-- <audio controls class="audio">
                 <source src="mi_audio.mp3" type="audio/mpeg">
                 Tu navegador no soporta el elemento de audio.
             </audio> -->
-            <audio controls class="audio">
-                <source src="mi_audio.mp3" type="audio/mpeg">
-            </audio>
-        </main>
+        <audio controls class="audio">
+            <source src="mi_audio.mp3" type="audio/mpeg">
+        </audio>
+    </main>
     <footer class="footer">
         <div class="footer-content">
             <div class="participants">
                 <h3>Participantes del Proyecto</h3>
                 <ul>
-                    <li>Diego Ramos  //  Santiago Wascoff</li>
-                    <li>Ezequiel Mendoza  //  Elvia Medina</li>
+                    <li>Diego Ramos // Santiago Wascoff</li>
+                    <li>Ezequiel Mendoza // Elvia Medina</li>
                     <li>Mora Castelli Garaycochea</li>
                 </ul>
             </div>
@@ -94,4 +98,5 @@
         </div>
     </footer>
 </body>
+
 </html>
