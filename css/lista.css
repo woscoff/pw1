@@ -92,6 +92,18 @@
 .footerLista{
     margin-top: 5rem;
 }
+.imgContainerLista {
+    position: relative;
+    width: 100%;
+}
+.audioLista{
+        top: 1em;
+        width: 92%;
+        margin: 2.6em 0;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #f8f8f8;
+}
 @media screen and (min-width: 1250px) {
 
     .listaFavorita {
@@ -116,11 +128,20 @@
         margin-top: 25rem;
     }
     .albumTextLista{
-        width: 50%;
+        width: 25%;
     }
     .imgContainerLista{
         width: auto;
     }
+    .audioLista{
+        width: 60rem;
+    }
+    .albumTextLista{
+        text-align: center;
+        margin-top: 8%;
+    font-size: 8px;
+    }
+
 }
 @media screen and (max-width: 768px) {
 
