@@ -4,55 +4,49 @@
     padding: 2rem 0;
     margin: 0 1rem; 
 }
-@media (max-width: 1290px){
-    .listaFavorita{
-        margin-left: 0;
-        width: 115rem;
-    }
-}
 
 @media (max-width: 1260px){
     .listaFavorita{
         padding: 0;
-        width: 105rem;
+        width: 80rem;
     }
 }
 
 @media (max-width: 1205px){
     .listaFavorita{
-        width: 90rem;
-        margin-left: 12rem;
+        width: 70rem;
+        margin-left: 0rem;
     }
 }
 
 @media (max-width: 1110px){
     .listaFavorita{
-        width: 85rem;
-        margin-left: 11rem;
+        width: 60rem;
+        margin-left: 0rem;
     }
 }
 
 @media (max-width: 700px){
     .listaFavorita{
-        height: 30vh;
+        height: 58vh;
         margin-left: 0px;
-        width: 85rem;
+        width: 60rem;
     }
 }
 
 @media (max-width: 590px){
     .listaFavorita{
-        height: 250vh;
+        height: 85vh;
         margin-left: 0px;
-        width: 70%;
+        width: 70rem;
     }
 }
 
 @media (max-width: 450px){
     .listaFavorita{
-        height: 20vh;
+        height: 47vh;
         margin-left: 0px;
-        width: 70%;
+        width: 67rem;
     }
 }
 
@@ -65,11 +59,11 @@
 .cancionFavorita table th,
 .cancionFavorita table td {
     padding: 25px 50px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
 }
 
 .cancionFavorita table th {
-    background-color: #d9d9d9;
+    background-color: #22333b;
     padding: 25px;
     font-size: 1.5rem;
 
