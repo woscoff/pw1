@@ -114,3 +114,12 @@ input{
     max-width: 100%;
     align-items: flex-start;
 } */
+@media screen and (max-width: 1050px) {
+    .planes{
+        
+        flex-wrap: wrap;
+     
+    }
+    
+}
+
