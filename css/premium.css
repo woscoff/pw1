@@ -1,3 +1,8 @@
+.usuario a {
+    color: white;
+    font-size: medium;
+}
+
 .planes img {
     width: 280px;
     margin: 20px 10px;
@@ -5,16 +10,16 @@
     object-fit: cover;
 }
 
-.planes{
+.planes {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 100%;
     align-items: flex-start;
 }
 
-.item1{
+.item1 {
     order: 1;
     margin: 20px;
     border-radius: 5px;
@@ -27,7 +32,7 @@
     box-shadow: 0px 0px 10px rgb(175, 173, 173);
 }
 
-.item2{
+.item2 {
     order: 2;
     margin: 20px;
     border-radius: 5px;
@@ -40,7 +45,7 @@
     box-shadow: 0px 0px 10px rgb(175, 173, 173);
 }
 
-.item3{
+.item3 {
     order: 3;
     margin: 20px;
     border-radius: 5px;
@@ -77,49 +82,61 @@
     margin: 10px;
 }
 
-input{
+input {
     align-self: center;
     transform: scale(1.5);
 }
-/* 
-.botones button{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-weight: lighter;
-    font-size: 26px;
-    margin: 15px;
-    padding: 1%;
-    border-top: 1px solid rgb(130, 128, 128);
-    justify-content: space-around;
-    background-color: white;
-    height: 60px;
-    width: 300px;
-}
-.botones button>a{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-weight: lighter;
-    font-size: 26px;
-    margin: 15px;
-    padding: 1%;
- 
-}
 
-.botones{
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    max-width: 100%;
-    align-items: flex-start;
-} */
-@media screen and (max-width: 1050px) {
-    .planes{
-        
-        flex-wrap: wrap;
-     
+@media (max-width:700px) {
+    .usuario {
+        margin: 0;
     }
-    
+
+    .usuario a {
+
+        font-size: x-small;
+        text-align: center;
+    }
+
+    .headerIndex {
+        /* border: 2px solid white; */
+        margin: 10px;
+        height: 9rem;
+    }
+
+    .headerIndex h1 {
+        text-align: center;
+    }
+
+    .fotoUsuario {
+
+        margin: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .fotoUsuarioPremium {
+        height: 100%;
+    }
 }
 
+@media(max-width:550px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content .footer-nav {
+        margin: 0;
+    }
+}
+
+@media (max-width:450px) {
+    .headerIndex h1 {
+        margin: 0;
+    }
+
+    .fotoUsuarioPremium {
+        display: none;
+    }
+}

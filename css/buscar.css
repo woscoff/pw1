@@ -3,35 +3,35 @@
     grid-template-columns: 20% 80%;
     grid-template-rows: 8% 35%;
     height: 90vh;
-    grid-template-areas: 
-    "navbar header"
-    "navbar albumesConReproductor"
-    "contenedorAlbumDescripcion albumesConReproductor"
-    "footer footer";
-    gap: 1rem; 
+    grid-template-areas:
+        "navbar header"
+        "navbar albumesConReproductor"
+        "contenedorAlbumDescripcion albumesConReproductor"
+        "footer footer";
+    gap: 1rem;
     padding: 1rem;
     background-color: #f2f2f2;
 }
 
-@media (max-width: 1290px){
-    .container{
+@media (max-width: 1290px) {
+    .container {
         grid-template-rows: 8% 10%;
         grid-template-columns: 0;
-        grid-template-areas: 
-        "header header header"
-        "navbar navbar navbar"
-        "albumesConReproductor albumesConReproductor albumesConReproductor"
-        "contenedorAlbumDescripcion contenedorAlbumDescripcion contenedorAlbumDescripcion"
-        "footer footer footer";
+        grid-template-areas:
+            "header header header"
+            "navbar navbar navbar"
+            "albumesConReproductor albumesConReproductor albumesConReproductor"
+            "contenedorAlbumDescripcion contenedorAlbumDescripcion contenedorAlbumDescripcion"
+            "footer footer footer";
         height: 100%;
     }
 }
 
-.buscar{
+.buscar {
     background-color: #c7c7c7;
 }
 
-.buscador{
+.buscador {
     width: 70%;
     height: 70%;
     margin-left: 2rem;
@@ -39,8 +39,8 @@
     font-size: 1.5rem;
 }
 
-@media (max-width: 700px){
-    .buscador{
+@media (max-width: 700px) {
+    .buscador {
         width: 60%;
         height: 70%;
         margin-top: 3rem;
@@ -48,8 +48,8 @@
     }
 }
 
-@media (max-width: 600px){
-    .buscador{
+@media (max-width: 600px) {
+    .buscador {
         width: 60%;
         height: 80%;
         margin-top: 3rem;
@@ -57,8 +57,8 @@
     }
 }
 
-@media (max-width: 500px){
-    .buscador{
+@media (max-width: 500px) {
+    .buscador {
         width: 60%;
         height: 120%;
         margin-top: 6rem;
@@ -66,8 +66,8 @@
     }
 }
 
-@media (max-width: 400px){
-    .buscador{
+@media (max-width: 400px) {
+    .buscador {
         width: 50%;
         height: 140%;
         margin-top: 12rem;
@@ -77,91 +77,92 @@
 
 
 /* DEBAJO DEL NAV */
-.albumSonando{
+.albumSonando {
     width: 31.2rem;
     position: relative;
 }
 
-@media (max-width: 1900px){
-    .albumSonando{
+@media (max-width: 1900px) {
+    .albumSonando {
         width: 30rem;
     }
 }
 
-@media (max-width: 1640px){
-    .albumSonando{
+@media (max-width: 1640px) {
+    .albumSonando {
         width: 28rem;
     }
 }
 
-@media (max-width: 1430px){
-    .albumSonando{
+@media (max-width: 1430px) {
+    .albumSonando {
         width: 25rem;
     }
 }
 
-@media (max-width: 1290px){
-    .albumSonando{
+@media (max-width: 1290px) {
+    .albumSonando {
         width: 25rem;
     }
 }
 
-@media (max-width: 700px){
-    .albumSonando{
+@media (max-width: 700px) {
+    .albumSonando {
         width: 30rem;
     }
 }
 
-@media (max-width: 500px){
-    .albumSonando{
+@media (max-width: 500px) {
+    .albumSonando {
         width: 35rem;
     }
 }
 
-@media (max-width: 450px){
-    .albumSonando{
+@media (max-width: 450px) {
+    .albumSonando {
         width: 40rem;
     }
 }
 
-.contenedorAlbumDescripcion{
+.contenedorAlbumDescripcion {
     margin-top: 4rem;
     margin-left: 1rem;
     grid-area: contenedorAlbumDescripcion;
 }
 
-@media (max-width: 1290px){
-    .contenedorAlbumDescripcion{
+@media (max-width: 1290px) {
+    .contenedorAlbumDescripcion {
         margin-top: 0;
         display: flex;
         flex-direction: row;
     }
 }
 
-.albumText{
+.albumText {
     padding-right: 4rem;
 }
 
-@media (max-width: 1290px){
-    .albumText{
+@media (max-width: 1290px) {
+    .albumText {
         text-align: center;
         margin-top: 8%;
     }
 }
 
-@media (max-width: 840px){
-    .albumText{
+@media (max-width: 840px) {
+    .albumText {
         font-size: 1.8rem;
     }
 }
 
-@media (max-width: 600px){
-    .albumText{
+@media (max-width: 600px) {
+    .albumText {
         font-size: 2.2rem;
     }
 }
-@media (max-width: 450px){
-    .albumText{
+
+@media (max-width: 450px) {
+    .albumText {
         font-size: 2.5rem;
     }
 }
@@ -176,62 +177,62 @@
     justify-content: space-between;
     gap: 2rem;
     padding: 2rem;
-    grid-template-rows: auto auto; 
+    grid-template-rows: auto auto;
 }
 
 
-@media (max-width: 1290px){
-    .albumes{
+@media (max-width: 1290px) {
+    .albumes {
         grid-template-columns: repeat(3, 1fr);
         width: 125rem;
         height: 60vh;
     }
 }
 
-@media (max-width: 1260px){
-    .albumes{
+@media (max-width: 1260px) {
+    .albumes {
         width: 115rem;
         margin-left: 3rem;
     }
 }
 
-@media (max-width: 1205px){
-    .albumes{
+@media (max-width: 1205px) {
+    .albumes {
         width: 90rem;
         margin-left: 12rem;
     }
 }
 
-@media (max-width: 1110px){
-    .albumes{
+@media (max-width: 1110px) {
+    .albumes {
         width: 85rem;
         margin-left: 12rem;
     }
 }
 
-@media (max-width: 1110px){
-    .albumes{
+@media (max-width: 1110px) {
+    .albumes {
         width: 85rem;
         margin-left: 12rem;
     }
 }
 
-@media (max-width: 1000px){
-    .albumes{
+@media (max-width: 1000px) {
+    .albumes {
         grid-template-columns: repeat(2, 1fr);
         height: 70vh;
     }
 }
 
-@media (max-width: 800px){
-    .albumes{
+@media (max-width: 800px) {
+    .albumes {
         grid-template-columns: repeat(2, 1fr);
         height: 80vh;
     }
 }
 
-@media (max-width: 700px){
-    .albumes{
+@media (max-width: 700px) {
+    .albumes {
         grid-template-columns: repeat(1, 1fr);
         height: 120vh;
         width: 75rem;
@@ -239,32 +240,32 @@
     }
 }
 
-@media (max-width: 590px){
-    .albumes{
+@media (max-width: 590px) {
+    .albumes {
         height: 130vh;
         width: 90rem;
         margin-left: 15rem;
     }
 }
 
-@media (max-width: 500px){
-    .albumes{
+@media (max-width: 500px) {
+    .albumes {
         height: 165vh;
         width: 88rem;
         margin-left: 19rem;
     }
 }
 
-@media (max-width: 450px){
-    .albumes{
+@media (max-width: 450px) {
+    .albumes {
         height: 185vh;
         width: 85rem;
         margin-left: 25rem;
     }
 }
 
-@media (max-width: 400px){
-    .albumes{
+@media (max-width: 400px) {
+    .albumes {
         height: 210vh;
         width: 85rem;
         margin-left: 25rem;
@@ -272,15 +273,15 @@
 }
 
 
-.imgAlbumes{
-    width: 100%; 
+.imgAlbumes {
+    width: 100%;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
     position: relative;
 }
 
-@media (max-width: 1290px){
-    .imgAlbumes{
+@media (max-width: 1290px) {
+    .imgAlbumes {
         width: 90%;
         height: 90%;
     }
@@ -291,92 +292,91 @@
     width: 100%;
 }
 
-.imgContainerSonando{
+.imgContainerSonando {
     position: relative;
     width: 100%;
 }
 
-@media(max-width: 1290px){
-    .imgContainerSonando{
+@media(max-width: 1290px) {
+    .imgContainerSonando {
         width: 30%;
     }
 }
 
-.fav{
+.fav {
     position: absolute;
     top: 10px;
     right: 10px;
-    height: 4rem; 
-    width: 4rem; 
+    height: 4rem;
+    width: 4rem;
 }
 
 
-.favAlbumSonando{
+.favAlbumSonando {
     position: absolute;
     top: 10px;
     right: 6.5rem;
-    height: 4rem; 
-    width: 4rem; 
+    height: 4rem;
+    width: 4rem;
 }
 
-@media (max-width: 1290px){
-    .favAlbumSonando{
+@media (max-width: 1290px) {
+    .favAlbumSonando {
         top: 10px;
         right: 1rem;
     }
 }
 
-.audio{
+.audio {
     top: 1em;
     width: 92%;
     margin: 2.6em 0;
-    border: 2px solid #ccc; 
-    border-radius: 10px; 
-    background-color: #f8f8f8; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
 }
 
-@media (max-width: 1290px){
-    .audio{
+@media (max-width: 1290px) {
+    .audio {
         margin-left: 5rem;
         width: 115rem;
     }
 }
 
-@media (max-width: 1260px){
-    .audio{
+@media (max-width: 1260px) {
+    .audio {
         width: 105rem;
     }
 }
 
-@media (max-width: 1205px){
-    .audio{
+@media (max-width: 1205px) {
+    .audio {
         width: 90rem;
         margin-left: 12rem;
     }
 }
 
-@media (max-width: 1110px){
-    .audio{
+@media (max-width: 1110px) {
+    .audio {
         width: 85rem;
         margin-left: 11rem;
     }
 }
 
-@media (max-width: 700px){
-    .audio{
-        height: 6rem; 
+@media (max-width: 700px) {
+    .audio {
+        height: 6rem;
     }
 }
 
-@media (max-width: 590px){
-    .audio{
+@media (max-width: 590px) {
+    .audio {
         margin-left: 13rem;
     }
 }
 
-@media (max-width: 450px){
-    .audio{
+@media (max-width: 450px) {
+    .audio {
         margin-left: 18rem;
     }
 }
-
