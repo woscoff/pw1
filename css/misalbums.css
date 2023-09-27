@@ -11,10 +11,19 @@
 .audio
 {
     top: 1em;
-    width: 95%;
-    margin: 2em 0;
+    /*width: 95%;
+    margin: 2em 0;*/
 }
 .misalbums{
     background-color: #c7c7c7;
 
+}
+
+@media (max-width: 1290px){
+    .contenedorAlbumDescripcion {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    }
 }
