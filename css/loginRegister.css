@@ -21,15 +21,28 @@ input{
 .buttonLog{
 	height: 3rem;
 	width: 30rem;
+}
+.buttonLog a{
 	color: black;
 }
 
 .linkRegister{
 	margin-top: 1rem;
 	font-size: 2rem;
+	color: white;
 }
 
 .linkPremium{
 	margin-bottom: 1rem;
 	font-size: 1.5rem;
+	color: white;
+}
+@media (max-width:540px){
+	.footer-content{
+		flex-direction: column;
+		justify-content: start;
+	}
+	.footer-content .footer-nav{
+		margin: 0;
+	}
 }
