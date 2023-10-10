@@ -212,7 +212,7 @@
 }
 @media (max-width: 840px){
     .albumText{
-        font-size: 1.8rem;
+        font-size: 3.5rem;
     }
 }
 @media (max-width: 800px){
@@ -249,7 +249,7 @@
         font-size: 3rem;
     }
     .albumText{
-        font-size: 2.2rem;
+        font-size: 3.2rem;
     }
 }
 @media (max-width: 590px){
@@ -283,7 +283,7 @@
         width: 40rem;
     }
     .albumText{
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
     .albumes{
         height: 185vh;

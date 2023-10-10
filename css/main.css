@@ -27,9 +27,10 @@ a {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: white;
+    text-align: left;
 }
 
 h2,
@@ -224,7 +225,16 @@ h1 {
   
 }
 
+@media (max-width: 950px) {
+    p{
+        font-size: 2rem;
+    }
+
+}
 @media (max-width: 700px) {
+    p{
+        font-size: 2.5rem;
+    }
     .navbar ul {
         height: 15rem;
     }

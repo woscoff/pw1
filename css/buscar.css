@@ -140,6 +140,7 @@
 
 .albumText {
     padding-right: 4rem;
+    font-size: x-large;
 }
 
 @media (max-width: 1290px) {
@@ -151,19 +152,24 @@
 
 @media (max-width: 840px) {
     .albumText {
-        font-size: 1.8rem;
+        font-size: x-large;
     }
 }
 
 @media (max-width: 600px) {
     .albumText {
-        font-size: 2.2rem;
+        font-size: xx-large;
     }
 }
 
 @media (max-width: 450px) {
     .albumText {
-        font-size: 2.5rem;
+        font-size: 45px;
+    }
+}
+@media (max-width: 380px) {
+    .albumText {
+        font-size: 50px;
     }
 }
 
