@@ -141,4 +141,14 @@ nav {
     .footer-nav {
         margin: 0;
     }
+    .form-contenedor form p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-contenedor form p input{
+        width: 100%;
+        text-align: center;
+    }
+    
 }
