@@ -149,7 +149,7 @@ h1 {
 .navbar li {
     /* border: 1px solid black; */
     /* padding: 3.4rem; */
-    background-color: #22333b;
+    /* background-color: #22333b; */
 }
 
 .navbar  a li {
@@ -163,7 +163,7 @@ h1 {
     color: black;
 }
 
-li:hover {
+.navbar ul  :hover {
     background-color: rgb(69, 129, 127)
 }
 
