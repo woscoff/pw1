@@ -140,14 +140,19 @@ h1 {
     /* agregado */
     background-color: #22333b;
 }
-
-.navbar li {
+/* agregue esta ruta al elemento a,quien contiene los "li" */
+.navbar a {
     border: 1px solid black;
     padding: 3.4rem;
     background-color: #22333b;
 }
+.navbar li {
+    /* border: 1px solid black; */
+    /* padding: 3.4rem; */
+    background-color: #22333b;
+}
 
-.navbar li a {
+.navbar  a li {
     font-size: 1.5rem;
     margin-right: 15rem;
     color: white;
@@ -213,7 +218,7 @@ li:hover {
 
     .navbar ul {
         width: 80%;
-        height: 7rem;
+        /* height: 7rem; */
      
     }
   
@@ -221,17 +226,18 @@ li:hover {
 
 @media (max-width: 700px) {
     .navbar ul {
-        height: 12rem;
+        height: 15rem;
     }
 
-    .navbar li a {
-        font-size: 2.2rem;
+    .navbar  a li{
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 500px) {
     .navbar ul {
-        height: 12rem;
+        height: 15rem;
+       
     }
 
     .navbar li a {
