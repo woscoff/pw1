@@ -9,7 +9,7 @@
     "contenedorAlbumDescripcion albumesConReproductor"
     "footer footer";
     gap: 1rem; 
-    padding: 1rem;
+    /*padding: 1rem;*/
     color: #c7c7c7;
     font-size: larger;
 }
