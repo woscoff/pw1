@@ -110,6 +110,11 @@ input {
     .fotoUsuarioPremium {
         height: 100%;
     }
+
+    .planes img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media(max-width:550px) {
@@ -120,6 +125,7 @@ input {
     .footer-content .footer-nav {
         margin: 0;
     }
+
 }
 
 @media (max-width:450px) {
@@ -129,5 +135,10 @@ input {
 
     .fotoUsuarioPremium {
         display: none;
+    }
+
+    .planes img {
+        width: 100px;
+        height: 100px;
     }
 }
