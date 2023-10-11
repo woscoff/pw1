@@ -4,26 +4,9 @@
     padding: 2rem 0;
     margin: 0 1rem; 
 }
-
-@media (max-width: 1260px){
-    .listaFavorita{
-        padding: 0;
-        width: 80rem;
-    }
-}
-
-@media (max-width: 1205px){
-    .listaFavorita{
-        width: 70rem;
-        margin-left: 0rem;
-    }
-}
-
-@media (max-width: 1110px){
-    .listaFavorita{
-        width: 105rem;
-        margin-left: 0rem;
-    }
+.table-list{
+    margin: 0 !important;
+    width: 92%;
 }
 
 
@@ -65,65 +48,37 @@
 .home{
     background-color: #c7c7c7;
 }
-
-
 .imgContainerLista {
     position: relative;
     width: 100%;
 }
-.audioLista{
-        top: 1em;
-        width: 92%;
-        margin: 2.6em 0;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        background-color: #f8f8f8;
-}
-@media screen and (min-width: 1250px) {
-
-    .listaFavorita {
-        height: 70vh;
-        overflow-x: auto;
-        padding: 2rem 0;
-        margin: 0 1rem; 
-        
-        
+@media (max-width: 450px){
+    .listaFavorita{
+        margin-left: 18rem;}
     }
     
-}
-@media screen and (max-width: 1250px) {
+@media (max-width: 1290px) {
 
-    .contenedorAlbumDescripcionLista {
-
-       width: 105rem;
+    .listaFavorita {
+        margin-left: 5rem;
+        width: 115rem; 
     }
-    .footerLista{
-        margin-top: 15rem;
-        width: 105rem;
+    .table-list{
+        width: 100%;
     }
-
-    .imgContainerLista{
-        width: auto;
-    }
-    .audioLista{
-        width: 105rem;
-    }
-    .albumTextLista{
-        text-align: center;
-        margin-top: 8%;
-        font-size: larger
-    }
+    
+    
 
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1205px) {
 
-    .cancionFavorita table {
-        font-size: 14px;
+    .listaFavorita {
+        margin-left: 12rem;
+        height: auto;
+        overflow-x: auto; 
+        width: 90rem; 
     }
-    .albumTextLista{
-        text-align: center;
-        margin-top: 8%;
-        font-size: x-large
+    .table-list{
+        width: 100%;
     }
-
 }
