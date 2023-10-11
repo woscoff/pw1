@@ -138,8 +138,9 @@ h1 {
 
 /* NAVBAR */
 .navbar {
-    margin-right: auto;
     grid-area: navbar;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .navbar ul {
@@ -157,11 +158,6 @@ h1 {
     background-color: #22333b;
 }
 
-.navbar li {
-    /* border: 1px solid black; */
-    /* padding: 3.4rem; */
-    /* background-color: #22333b; */
-}
 
 .navbar  a li {
     font-size: 1.5rem;
@@ -198,7 +194,9 @@ h1 {
 
 @media (max-width: 1290px) {
     .navbar {
-        width: 97%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     .navbar ul {
@@ -206,6 +204,7 @@ h1 {
         flex-direction: row;
         width: 100%;
         height: auto;
+        margin: 0;
     }
 
     .navbar li {
@@ -285,7 +284,7 @@ h1 {
 
 .footer-content {
     max-width: 1200px;
-    margin: 0;
+    margin: 0 20rem;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
