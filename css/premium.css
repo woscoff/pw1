@@ -133,6 +133,19 @@ input {
 }
 
 @media (max-width:450px) {
+    /* agregue,hiceq ue esten uno debajo del otro en modo movile */
+    .planes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* border: 2px solid rgb(0, 17, 255); */
+    }
+    .planes article{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 33%;
+    }
+    /* --------------^------------ */
     .headerIndex h1 {
         margin: 0;
     }
@@ -145,4 +158,7 @@ input {
         width: 100px;
         height: 100px;
     }
+}
+html{
+    overflow: scroll;
 }

@@ -126,6 +126,7 @@ label {
 @media(max-width:550px) {
     .form-content {
         margin: auto;
+        width: 100%;
     }
 
     .form-content .pago .item2 {
@@ -164,4 +165,13 @@ label {
         font-size: small;
         margin: auto;
     }
+}
+body{
+    /* border: 5px solid red; */
+    overflow: hidden;
+}
+html{
+    /* border: 5px solid white; */
+    width: 100vw;
+    overflow: scroll;
 }
