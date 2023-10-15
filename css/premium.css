@@ -119,6 +119,13 @@ input {
         width: 150px;
         height: 150px;
     }
+        /* centrar un pooco mas los nombres del footer */
+
+    .footer-content{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media(max-width:550px) {
@@ -145,6 +152,7 @@ input {
         width: 100%;
         height: 33%;
     }
+   
     /* --------------^------------ */
     .headerIndex h1 {
         margin: 0;
