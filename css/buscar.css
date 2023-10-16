@@ -38,6 +38,98 @@
     font-size: 1.5rem;
 }
 
+
+
+
+
+
+/* ------------------tabla-------------------- */
+.listaFavorita {
+    height: 70vh;
+    overflow-x: AUTO;
+    padding: 2rem 0;
+    margin: 0 1rem; 
+}
+.table-list{
+    margin: 0 !important;
+    width: 95%;
+}
+
+
+.cancionFavorita table {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.25rem;
+}
+
+.cancionFavorita table th,
+.cancionFavorita table td {
+    padding: 25px 50px;
+    border: 1px solid black;
+}
+
+.cancionFavorita table th {
+    background-color: #22333b;
+    padding: 25px;
+    font-size: 1.5rem;
+}
+
+.imgAlbumesLista {
+    width: 15rem;
+}
+.imgReproduccion{
+    width: 4.25rem;
+}
+.textoTabla {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.favList{
+    position: absolute;
+    top: -12px;
+    right: -2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.home{
+    background-color: #c7c7c7;
+}
+.imgContainerLista {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 450px){
+    .listaFavorita{
+        margin-left: 18rem;}
+    }
+    
+@media (max-width: 1290px) {
+
+    .listaFavorita {
+        margin-left: 5rem;
+        width: 115rem; 
+    }
+    .table-list{
+        width: 100%;
+    }
+    
+    
+
+}
+@media (max-width: 1205px) {
+
+    .listaFavorita {
+        margin-left: 12rem;
+        height: auto;
+        overflow-x: auto; 
+        width: 90rem; 
+    }
+    .table-list{
+        width: 100%;
+    }
+}
+/* .-------------------fin de tabla----------------------- */
 @media (max-width: 700px) {
     .buscador {
         width: 60%;
@@ -190,6 +282,8 @@ main{
     padding: 2rem;
     grid-template-rows: auto auto;
     text-align: center;
+
+    border: 2px solid red;
 }
 
 
@@ -247,8 +341,13 @@ main{
     .albumes {
         height: 300vh;
     }
+    
 }
-
+@media screen and (min-width: 300px) and (max-width: 600px) {
+html{
+    height: 400vh;
+}
+}
 
 .imgAlbumes {
     width: 100%;
@@ -329,3 +428,10 @@ main{
         height: 6rem;
     }
 }
+
+
+
+
+
+
+

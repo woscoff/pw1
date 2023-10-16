@@ -52,10 +52,19 @@
     position: relative;
     width: 100%;
 }
+
+
+
 @media (max-width: 450px){
     .listaFavorita{
-        margin-left: 18rem;}
+        margin-left: 18rem;
     }
+    .footer{
+        border: 10px solid red;
+        width: 300vw;
+    }
+    }
+   
     
 @media (max-width: 1290px) {
 
@@ -66,6 +75,10 @@
     .table-list{
         width: 100%;
     }
+    .footer{
+        border: 10px solid red;
+        width: 120vw;
+    }
     
     
 
@@ -74,11 +87,39 @@
 
     .listaFavorita {
         margin-left: 12rem;
-        height: auto;
+        /* height: auto; */
         overflow-x: auto; 
         width: 90rem; 
     }
     .table-list{
         width: 100%;
+    }
+}
+@media (max-width: 1095px) {
+    .footer{
+        border: 10px solid red;
+        width: 190vw;
+        ;
+    }
+}
+@media (max-width: 695px) {
+    .footer{
+        border: 10px solid red;
+        width: 240vw;
+        ;
+    }
+}
+@media (max-width: 545px) {
+    .footer{
+        border: 10px solid red;
+        width: 290vw;
+        ;
+    }
+}
+@media (max-width: 425px) {
+    .footer{
+        border: 10px solid red;
+        width: 290vw;
+        ;
     }
 }

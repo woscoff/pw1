@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../assets/fondonegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    /* background-color: rgb(247, 255, 17); */
+   
+   display: grid;
+
+    grid-template-areas: 
+    "nav header header header header header header"
+    "nav header header header header header header"
+    "nav  main   main main main main main"
+    "nav  main   main main main main main"
+    "nav  main   main main main main main"
+    "nav  main   main main main main main"
+    "aside main  main  main  main  main  main "
+    "aside main  main  main  main  main  main "
+    "aside main  main  main  main  main  main "
+    "aside main  main  main  main  main  main "
+    "footer footer footer footer footer footer footer"
+    ;
+}
+.caja {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    /* background-color: rgb(57, 128, 191); */
+}
+.header {
+    /* background-color: aqua; */
+}
+.nav {
+    /* background-color: blue; */
+
+}
+
+.main {
+    /* background-color: red; */
+}
+.aside {
+    /* background-color: green; */
+}
+.footer {
+    /* background-color: blueviolet; */
+}
+.item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: nav;
+}
+.item3 {
+    grid-area: main;
+}
+.item4 {
+    grid-area: aside;
+}
+.item5 {
+    grid-area: footer;
+}
+
+/* ---------header------------------- */
+.header{
+    height: 15vh;
+}
+.header_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 2px solid rgb(255, 15, 15); */
+}
+.header_container>div{
+/* border: 2px solid black; */
+}
+.header_container .header-titulo{
+/* border: 2px solid rgb(173, 51, 7); */
+width: 100%;
+height: 100%;
+margin: auto;
+text-align: center;
+color: aliceblue;
+}
+.header_container .header-titulo h1{
+font-size: xx-large;
+}
+.header_container .header-buscador input{
+/* border: 2px solid rgb(240, 240, 240); */
+border-radius: 20px;
+width: 100%;
+height: 100%;
+
+}
+.header_container>div{
+/* border: 2px solid black; */
+}
+.header-perfil{
+    display: flex;
+    justify-content: end;
+    
+}
+.header-perfil_usuario{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+.header-perfil_usuario a{
+   list-style: none;
+    color: aliceblue;
+}
+.header-perfil_contenedor-img{
+    /* border: 2px solid red; */
+    width: 20%;
+    margin: 0 1rem;
+
+    
+}
+.header-perfil_contenedor-img img{
+    /* border: 2px solid rgb(0, 0, 0); */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+/* .---------------nav----------------------- */
+.nav{
+    height: 100%;
+}
+.menu{
+    /* border: 2px solid white; */
+    height: 100%;
+    width: 100%;
+    background-color: #22333b
+}   
+.menu ul{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   list-style: none;
+}   
+.menu ul div{
+   border: 2px solid rgb(0, 0, 0);
+height: 25%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}   
+.menu ul div:hover{
+background-color: rgb(69, 129, 127);
+
+}   
+.menu ul div a{
+color: aliceblue;
+text-align: center;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}   
+/* ---------------main--------------------- */
+.item3{
+    /* border: 10px solid violet; */
+    position: relative;
+}
+.main_container{
+    width: 100%;
+    /* border: 10px solid rgb(251, 247, 13); */
+
+}
+.albumes-container{
+    /* border: 5px solid rgb(21, 243, 73); */
+    padding: 1rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.albumes-container_container{
+    /* border: 10px solid red; */
+
+    width: 30%;
+    height: 70%;
+    margin: 1rem 0;
+}
+.albumes-container .imgContainer{
+    /* border: 5px solid rgb(4, 8, 233); */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+
+
+}
+.albumes-container .imgContainer .imgAlbumes{
+    /* border: 5px solid rgb(6, 248, 236); */
+    border: 2px solid rgb(211, 211, 211);
+
+   width: 100%;
+   height: 30vw;
+   object-fit: cover;
+
+}
+.albumes-container .imgContainer .favAlbumSonando{
+    /* border: 20px solid rgb(105, 14, 202); */
+    position: absolute;
+   width: 20%;
+   height: 20%;
+   object-fit: contain;
+   
+}
+.main_container audio{
+    width: 100%;
+}
+/* --------aside----------------------- */
+
+.contenedorAlbumDescripcion{
+    /* border: 5px solid blue; */
+    width: 100%;
+    height: 100%;
+}
+.contenedorAlbumDescripcion .imgContainerSonando{
+    /* border: 5px solid rgb(255, 0, 191); */
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.contenedorAlbumDescripcion .imgContainerSonando .albumSonando{
+    /* border: 5px solid blue; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenedorAlbumDescripcion .imgContainerSonando .favAlbumSonando{
+    /* border: 5px solid rgb(6, 213, 61); */
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    object-fit: contain;
+}
+.contenedorAlbumDescripcion .imgContainerSonando .favAlbumSonando{
+    /* border: 5px solid rgb(6, 213, 61); */
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+}
+.albumText{
+    color: aliceblue;
+}
+/* --------------footer--------- */
+
+.footer_container{
+    /* border: 5px solid rgb(247, 247, 247); */
+    display: flex;
+    flex-direction: column;
+    background-color: #22333b
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    padding:1rem ;
+ 
+}
+.footer-bottom{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 1rem;
+}
+.participants ul{
+    list-style: none;
+}
+.footer-nav ul{
+    list-style: none;
+    
+}
+.footer-nav ul a{
+    list-style: none;
+    color: aliceblue;
+}
+@media(max-width:850px){
+    .container{
+        grid-template-areas: 
+        "header header "
+    
+        "nav  nav  "
+        "main  main  "
+        "main  main  "
+        "aside aside "
+        "footer footer "
+    
+        ;
+   
+    }
+    /* -------------------NAV--------------------- */
+    .menu{
+        /* border: 10px solid white; */
+        height: 10vh;
+    }
+    .menu ul{
+        /* border: 5px solid red; */
+        flex-direction: row;
+    }
+    .menu ul div{
+        width: 25%;
+        height: 100%;
+    }
+        /* .---------------Main--------------- */
+        .albumes-container_container{
+            /* border: 10px solid violet; */
+            width: 40%;
+        }
+        
+        .albumes-container .imgContainer {
+            /* border: 5px solid red; */
+            width: 80%;
+        }
+        .albumes-container .imgContainer .imgAlbumes{
+            /* border: 5px solid rgb(6, 248, 236); */
+            border: 2px solid rgb(211, 211, 211);
+        
+           width: 120%;
+           height: 30vw;
+           object-fit: cover;
+        }
+
+    /* -------------aside-------------------- */
+    .contenedorAlbumDescripcion{
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid red; */
+    }
+
+    .contenedorAlbumDescripcion .imgContainerSonando{
+        /* border: 2px solid green; */
+        height: 100%;
+    }
+    
+    .contenedorAlbumDescripcion p{
+        /* border: 2px solid green; */
+        height: 100%;
+        margin: auto;
+        text-align: justify;
+
+    }
+}
+@media(max-width:500px){
+    .container{
+     
+        grid-template-areas: 
+        "header"
+ 
+        "nav"
+
+        "main"
+        
+
+        "aside"
+
+
+        "footer"
+        ;
+    }
+  /* -------------header------------- */
+  .header-perfil_contenedor-img{
+    /* border: 2px solid red; */
+    width: 30%;
+    margin: 0 1rem;
+
+    
+}
+    .albumes-container_container{
+        /* border: 5px solid violet; */
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .albumes-container_container .imgAlbumes{
+        /* border: 5px solid rgb(211, 211, 211); */
+        width: 100px;
+        
+    }
+
+    .albumes-container_container{
+        /* border: 10px solid rgb(130, 238, 146); */
+        width: 90%;
+        height: 100%;
+    }
+    
+    .albumes-container .imgContainer {
+        /* border: 5px solid red; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .albumes-container .imgContainer .imgAlbumes{
+        /* border: 5px solid rgb(6, 248, 236); */
+        /* border: 2px solid rgb(211, 211, 211); */
+    
+       width: 100%;
+       height: 100%;
+        
+       object-fit: cover;
+    }
+   /* ---------footer------------------ */
+   .footer_container{
+    margin-top:1rem ;
+   }
+}

@@ -1,3 +1,15 @@
+html{
+    border: 5px solid red;
+    margin: auto;
+    display: flex;
+    margin: auto;
+}
+body{
+    border: 5px solid green;
+    overflow: scroll;
+margin: auto;
+}
+
 .container {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -34,13 +46,6 @@
     width: 31.2rem;
     position: relative;
 }
-
-
-
-
-
-
-
 
 .contenedorAlbumDescripcion{
     margin-top: 4rem;
@@ -105,7 +110,7 @@
 
 .audio{
     top: 1em;
-    width: 90%;
+    width: 92%;
     margin: 2.6em 0;
     border: 2px solid #ccc; 
     border-radius: 10px; 
@@ -159,6 +164,52 @@
     }
 }
 
+@media (max-width: 1260px){
+    .albumes{
+        width: 115rem;
+        margin-left: 3rem;
+    }
+    .audio{
+        width: 105rem;
+    }
+}
+@media (max-width: 1900px){
+    .albumSonando{
+        width: 30rem;
+    }
+}
+@media (max-width: 1640px){
+    .albumSonando{
+        width: 28rem;
+    }
+}
+@media (max-width: 1430px){
+    .albumSonando{
+        width: 25rem;
+    }
+}
+@media (max-width: 1205px){
+    .albumes{
+        width: 90rem;
+        margin-left: 12rem;
+    }
+    .audio{
+        width: 90rem;
+        margin-left: 12rem;
+    }
+}
+@media (max-width: 1110px){
+    .albumes{
+        width: 85rem;
+        margin-left: 12rem;
+    
+    }
+    .audio{
+        width: 85rem;
+        margin-left: 11rem;
+    }
+   
+}
 @media (max-width: 1000px){
     .albumes{
         grid-template-columns: repeat(2, 1fr);
@@ -189,6 +240,8 @@
     .albumes{
         grid-template-columns: repeat(1, 1fr);
         height: 120vh;
+        width: 75rem;
+        margin-left: 21rem;
     }
     .audio{
         height: 6rem; 
@@ -207,7 +260,12 @@
 }
 @media (max-width: 590px){
     .albumes{
-        height: 160vh;
+        height: 130vh;
+        width: 90rem;
+        margin-left: 15rem;
+    }
+    .audio{
+        margin-left: 13rem;
     }
 }
 @media (max-width: 500px){
@@ -221,7 +279,9 @@
         width: 35rem;
     }
     .albumes{
-        height: 190vh;
+        height: 165vh;
+        width: 88rem;
+        margin-left: 19rem;
     }
 }
 @media (max-width: 450px){
@@ -232,7 +292,12 @@
         font-size: 4rem;
     }
     .albumes{
-        height: 210vh;
+        height: 185vh;
+        width: 85rem;
+        margin-left: 25rem;
+    }
+    .audio{
+        margin-left: 18rem;
     }
 }
 @media (max-width: 400px){
@@ -243,7 +308,9 @@
         font-size: 4rem;
     }
     .albumes{
-        height: 250vh;
+        height: 210vh;
+        width: 85rem;
+        margin-left: 25rem;
     }
 }
 
