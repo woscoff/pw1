@@ -1,6 +1,7 @@
-.container{
+.contenedor{
     display: flex;
     flex-direction: column;
+
 }
 .planeElegido img {
     width: 280px;
@@ -70,7 +71,7 @@
     font-size: 20px;
 }
 
-.item1 {
+form .item1 {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -89,8 +90,11 @@ label {
     color: white;
 }
 
+.footer{
+    margin-top: 5rem;
+}
 @media (max-width:700px) {
-    .usuario {
+    /* .usuario {
         margin: 0;
     }
 
@@ -108,9 +112,9 @@ label {
 
     .headerIndex h1 {
         text-align: center;
-    }
+    } */
 
-    .fotoUsuario {
+    /* .fotoUsuario {
         margin: 0;
         width: 100%;
         height: 100%;
@@ -120,7 +124,7 @@ label {
     .fotoUsuarioPremium {
         height: 100%;
         margin: 5px;
-    }
+    } */
 }
 
 @media(max-width:550px) {
@@ -140,13 +144,13 @@ label {
     }
 
 
-    .footer-content {
+    /* .footer-content {
         flex-direction: column;
     }
 
     .footer-content .footer-nav {
         margin: 0;
-    }
+    } */
 }
 
 @media(max-width:400px) {
@@ -165,13 +169,4 @@ label {
         font-size: small;
         margin: auto;
     }
-}
-body{
-    /* border: 5px solid red; */
-    overflow: hidden;
-}
-html{
-    /* border: 5px solid white; */
-    width: 100vw;
-    overflow: scroll;
 }
