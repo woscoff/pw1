@@ -23,7 +23,7 @@
     align-items: flex-start;
 }
 
-.planes .item1 {
+.item11 {
     gap: 20px;
     width: calc(33.33% - 20px);
     text-align: center;
