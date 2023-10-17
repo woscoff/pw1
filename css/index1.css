@@ -131,7 +131,7 @@ height: 100%;
     object-fit: cover;
 
 }
-/* .---------------nav----------------------- */
+/* .---------------nav-------------------------------------------- */
 .nav{
     height: 100%;
 }
@@ -170,7 +170,7 @@ justify-content: center;
 align-items: center;
 text-decoration: none;
 }   
-/* ---------------main--------------------- */
+/* ---------------donde esta los albums------------------------------------------- */
 .item3{
     /* border: 10px solid violet; */
     position: relative;
@@ -228,7 +228,7 @@ text-decoration: none;
 .main_container audio{
     width: 100%;
 }
-/* --------aside----------------------- */
+/* --------donde esta la descripcion de la cancion----------------------- */
 
 .contenedorAlbumDescripcion{
     /* border: 5px solid blue; */
@@ -267,7 +267,7 @@ text-decoration: none;
 .albumText{
     color: aliceblue;
 }
-/* --------------footer--------- */
+/* --------------footer--------------------------------------- */
 
 .footer_container{
     /* border: 5px solid rgb(247, 247, 247); */
@@ -344,7 +344,7 @@ text-decoration: none;
            object-fit: cover;
         }
 
-    /* -------------aside-------------------- */
+    /* -------------descripcion de la cancion-------------------- */
     .contenedorAlbumDescripcion{
         display: flex;
         flex-direction: row;
@@ -364,6 +364,15 @@ text-decoration: none;
 
     }
 }
+
+
+
+
+
+
+
+
+
 @media(max-width:500px){
     .container{
      
