@@ -18,6 +18,10 @@
     align-items: flex-start;
 }
 
+.botones{
+    display: flex;
+}
+
 .titulo {
     border-bottom: 1px solid white;
 }
