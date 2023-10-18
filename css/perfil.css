@@ -4,25 +4,11 @@
     padding: 0;
 }
 
-.botones{
-    display: grid;
-    width: 30%;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    row-gap: 1rem;
-}
-
-.contenedor-btn {
-    display: flex;
-    flex-direction: row;
-}
-
 .button {
     background-color: #c6ac8f;
     height: 5rem;
     border-radius: 10px;
-    width: 8rem;
-    margin: 0 80px;
+    padding: 1rem;
 }
 .button a {
   
@@ -130,8 +116,6 @@ body {
         flex-direction: column;
         /* border: 2px solid red; */
         width: 70%;
-        align-items: center;
-        margin-top: 1rem;
     }
     .btn{
         width: 100%;

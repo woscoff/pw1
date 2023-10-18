@@ -46,22 +46,13 @@
                 <p><label class="label" for="email">email</label>
                     <input id="email" type="email" placeholder="ingrese email">
                 </p>
-                <div class="megaBotones">
-                    <div class="botones">
-                        <form action="views\premium.html">
-                            <input class="button" type="submit" value="Premium">
-                        </form>
-                        <form action="views\login.html">
-                            <input class="button" type="submit" value="Elimina usuario">
-                        </form>
-                    
-                        <form action="index.html">
-                            <input class="btn" type="submit" value="Volver al home">
-                        </form>
-                        <form action="views\perfil.html">
-                            <input class="btn" type="submit" value="Guardar">
-                        </form>
-                    </div>
+                <div class="contenedor-btn">
+                    <button class="button"><a class="link" href="premium.html">premium</a></button>
+                    <button class="button"><a class="link" href="login.html">elimina usuario</a></button>
+                </div>
+                <div class="botones">
+                    <button class="btn"><a class="link" href="../index.html">Volver al home</a></button>
+                    <button class="btn"><a class="link" href="../views/perfil.html">Guardar</a></button>
                 </div>
             </form>
         </section>
