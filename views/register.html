@@ -15,25 +15,25 @@
         <form action="#" method="post" class="login">
             <div>
                 <label>Usuario</label><br>
-                <input type="text" placeholder=" Name">
+                <input type="text" name="nombre" placeholder=" Name">
             </div>
             <div>
                 <label>Contraseña</label> <br>
-                <input type="text" placeholder=" ********">
+                <input type="text" name="contraseña" placeholder=" ********">
             </div>
             <div>
                 <label>Repetir Contraseña</label> <br>
-                <input type="text" placeholder=" ********">
+                <input type="text" name="repetirContraseña" placeholder=" ********">
             </div>
             <div>
                 <label>Email</label> <br>
-                <input type="email" placeholder=" example@email.com">
+                <input type="email" name="email" placeholder=" example@email.com">
             </div>
             <div>
                 <label>Fecha de Nacimiento</label> <br>
-                <input type="text" placeholder=" 00/00/0000">
+                <input type="text" name="fechaNacimiento" placeholder=" 00/00/0000">
             </div>
-            <!-- <button class="buttonLog">Registrarme</button> -->
+            <button type="submit" class="buttonLog">Registrarme</button>
             <a href="login.html" class="linkRegister">Iniciar Sesión</a>
             <a href="../views/premiumSinLogin.html" class="linkPremium">Premium</a>
         </form>
@@ -65,6 +65,7 @@
             </div>
         </footer>
     </section>
+    <script src="../js/register.js"></script>
 </body>
 
 </html>
