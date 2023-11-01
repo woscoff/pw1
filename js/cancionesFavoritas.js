@@ -78,7 +78,7 @@ for (let i = 0; i < reproduccion.length; i++) {
         const nombreCancion= divPadre.children[1].children[1].children[i].children[1].textContent
         const imgCancion =objetoLocal[i].imgCancion
         const albumCancion= divPadre.children[2].children[1].children[i].children[1].textContent
-        const infoLocalStorage=[{cancion:nombreCancion, album:albumCancion,imgCancion:imgCancion}]
+        const infoLocalStorage=[{cancion:nombreCancion, album:albumCancion,imgCancion:imgCancion, descripcion:objetoLocal[i].descripcion}]
         localStorage.setItem("reproduciendo", JSON.stringify(infoLocalStorage));
         let imagenReproduciendo=document.getElementsByClassName("albumSonando")[0]
         imagenReproduciendo.src=imgCancion

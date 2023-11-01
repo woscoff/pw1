@@ -31,32 +31,47 @@
     <main>
         <section class="form-contenedor">
             <form action="">
-                <p><label class="label" for="nombre">nombre</label>
+                <p><label class="label" for="nombre">Nombre</label>
                     <input id="nombre" type="text" placeholder="ingrese su nombre">
                 </p>
-                <p> <label class="label" for="contraceña">contraceña</label>
-                    <input id="contraceña" type="password" placeholder="ingrese una contraceña">
+                <p> <label class="label" for="contraceña">Contraseña</label>
+                    <input id="contraceña" type="password" placeholder="ingrese una contraseña">
                 </p>
-                <p><label class="label" for="repetir-contraceña">repetir-contraceña</label>
-                    <input id="repetir-contraceña" type="password" placeholder="repita contraceña">
+                <p><label class="label" for="repetir-contraceña">Repetir contraseña</label>
+                    <input id="repetir-contraceña" type="password" placeholder="Repita la contraseña">
                 </p>
-                <p><label class="label" for="fecha-nacimiento">fecha de nacimiento</label>
+                <p><label class="label" for="fecha-nacimiento">Fecha de nacimiento</label>
                     <input id="fecha-nacimiento" type="date">
                 </p>
-                <p><label class="label" for="email">email</label>
+                <p><label class="label" for="email">Email</label>
                     <input id="email" type="email" placeholder="ingrese email">
                 </p>
                 <div class="contenedor-btn">
-                    <button class="button"><a class="link" href="premium.html">premium</a></button>
-                    <button class="button"><a class="link" href="login.html">elimina usuario</a></button>
+                    <button class="button"><a class="link" href="premium.html">Premium</a></button>
+                    <button class="button"><a class="link" href="login.html">Elimina usuario</a></button>
                 </div>
                 <div class="botones">
                     <button class="btn"><a class="link" href="../index.html">Volver al home</a></button>
-                    <button class="btn"><a class="link" href="../views/perfil.html">Guardar</a></button>
+                    <button class="btn">Guardar</button>
                 </div>
             </form>
         </section>
 
+        <div id="myModal" class="modal">
+         
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <div class="modal-header">
+                    <h3 class="title-header">Datos guardados correctamente</h3>
+                </div>
+                <div class="modal-footer">
+                   <a class="link" href="../index.html"> <button id="confirmButton">Ir al home</button></a>
+                    <button id="cancelButton">Cerrar</button>
+                </div>
+            </div>
+        
+        </div>
+        
 
     </main>
 
@@ -85,6 +100,8 @@
             </div>
         </footer>
     </section>
+    <script src="../js/navBar.js"></script>
+    <script src="../js/perfil.js"></script>
 </body>
 
 </html>

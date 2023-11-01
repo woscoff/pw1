@@ -29,6 +29,7 @@
 
             </header>
         </section>
+        <form id="planForm" method="post">
         <section class="planes">
             <article class="item11">
                 <img src="..\assets\LogosPremium\plan mensual.png" alt="planMensual">
@@ -40,7 +41,7 @@
                     <br>
                 </h3>
                 <h4>$1.330 ARS</h4>
-                <input type="radio" name="plan">
+                <input type="radio" name="plan" value="mensual">
                 <br>
             </article>
 
@@ -54,7 +55,7 @@
                     <br>
                 </h3>
                 <h4>$2.000 ARS</h4>
-                <input type="radio" name="plan">
+                <input type="radio" name="plan" value="anual">
                 <br>
             </article>
 
@@ -68,14 +69,15 @@
                     <br>
                 </h3>
                 <h4>$8.000 ARS</h4>
-                <input type="radio" name="plan">
+                <input type="radio" name="plan" value="infinito">
                 <br>
                 <br>
             </article>
         </section>
+    </form>
         <div class="botones">
             <button onclick="location.href='../index.html'" class="btn"><a class="link" href="../index.html">Cancelar</a></button>
-            <button onclick="location.href='../views/pagarSinLogin.html'" class="btn"><a class="link" href="../views/pagarSinLogin.html">Avanzar</a></button>
+            <button  class="btn" id="avanzarButton">Avanzar</button>
         </div>
         
         <section class="item5 caja footer">
@@ -105,7 +107,8 @@
         </section>
     </section>
 
-
+<script src="../js/navBar.js"></script>
+<script src="../js/premium.js"></script>
 </body>
 
 </html>

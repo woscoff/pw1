@@ -30,7 +30,7 @@ height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40%;
+    height: 16%;
     color: aliceblue;
     text-align: center;
     font-size: x-large;
@@ -40,6 +40,9 @@ height: 5vh;
 
     justify-self: end;
     z-index: 1;
+}
+h2{
+    color: white;
 }
 .img-reproducir{
     width: 100%;

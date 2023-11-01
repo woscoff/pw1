@@ -56,11 +56,12 @@
         <section class="form-content">
             <form action="#" method="post" class="pago">
                 <article class="item1">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" placeholder="Name">
                     <label>Numero de Tarjeta:</label>
                     <input pattern="[0-9]{16}" name="numero" title="Incerte su numero de Tarjeta"
                         placeholder="**** **** **** ****">
-                    <label>Nombre y Apellido</label>
-                    <input type="text" placeholder="Name">
+                
                 </article>
                 <article class="item2">
                     <label>VTO</label>
@@ -74,11 +75,23 @@
                     <!-- <div class="btn" onclick="location.href='../views/perfilConIniciarSesion.html'">asd</div>
                     <div class="btn" onclick="location.href='../views/perfil.html'">as</div> -->
                     <button onclick="location.href='../views/perfil.html'" class="btn"><a class="link" href="../views/perfil.html">Cancelar</a></button>
-                    <button onclick="location.href='../views/perfilConIniciarSesion.html'" class="btn"><a class="link" href="../views/perfilConIniciarSesion.html">Pagar</a></button>
+                    <button  class="btn" id="pagar">Pagar</button>
                 </article>
             </form>
         </section>
+        <div id="myModal" class="modal">
+         
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <div class="modal-header">
+                    <h3 class="title-header">Pago exitoso</h3>
+                </div>
+                <div class="modal-footer">
+                    <button id="cancelButton">Continuar</button>
+                </div>
+            </div>
         
+        </div>
     <section class="item5 caja footer">
         <footer class="footer_container">
             <div class="footer-content">
@@ -105,8 +118,8 @@
         </footer>
     </section>
     </section>
-
-
+    <script src="../js/navBar.js"></script>
+    <script src="../js/pagarSinLogin.js"></script>
 </body>
 
 </html>

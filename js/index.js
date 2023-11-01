@@ -85,6 +85,8 @@ for(let i =0; i< estrellaAmarilla.length;i++){
     }
 
 
+  
+
     estrellaAmarilla[i].addEventListener("click", ()=>{
         if(estrellaAmarilla[i].src === "http://127.0.0.1:5500/assets/estrella1.png"){
             const img=estrellaAmarilla[i].parentElement.children[0].children[0].src
