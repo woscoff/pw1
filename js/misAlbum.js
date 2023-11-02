@@ -2,7 +2,7 @@ const local = JSON.parse(localStorage.getItem("albumFavorito")) || [];
 
 const albumesContainer = document.querySelector(".albumes-container");
 const estrellas =document.getElementsByClassName("favAlbumSonando")
-console.log(local)
+
 for (const album of local) {
 
     const albumContainer = document.createElement("div");
@@ -10,9 +10,8 @@ for (const album of local) {
   
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("imgContainer");
-  
     const albumLink = document.createElement("a");
-    albumLink.href = `./views/musicaSonando1.html?id=${album.id}`;
+    albumLink.href = `./musicaSonando1.html?id=${album.id}`;
   
     const albumImg = document.createElement("img");
     albumImg.src = album.imagen;

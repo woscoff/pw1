@@ -75,12 +75,9 @@ const reproduccion = document.getElementsByClassName("img-reproducir")
 for (let i = 0; i < reproduccion.length; i++) {
 
     reproduccion[i].addEventListener('click', function () {
-     
-        let objeto = info[parseInt(reproduccion[i].id)].canciones[parseInt(reproduccion[i].id)]
-        objeto.imagen=info[parseInt(reproduccion[i].id)].imagen
-  
-
-
+        let objeto = objetoLocal.find(el=>el.id ==reproduccion[i].id && el.idAlbum == parseInt(reproduccion[i].parentElement.parentElement.parentElement.parentElement.children[2].children[1].children[i].children[0].id))
+        let imagen = info.find(el=>el.id == parseInt(reproduccion[i].parentElement.parentElement.parentElement.parentElement.children[2].children[1].children[i].children[0].id))
+        objeto.imagen=imagen.imagen
         localStorage.setItem("reproduciendo", JSON.stringify(objeto));
         let imagenReproduciendo=document.getElementsByClassName("albumSonando")[0]
         imagenReproduciendo.src=objeto.imagen
