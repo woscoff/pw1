@@ -8,8 +8,6 @@ if (usuarioParseado) {
   if (usuario.length > 0) {
     usuario[0].innerHTML = usuarioNombre;
   }
-} else {
-  Alert("No se encontró ningún valor en el localStorage con el nombre 'usuarios'.");
 }
 
 const cerrarSesion= document.getElementsByClassName("cerar-sesion")[0];

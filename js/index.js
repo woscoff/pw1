@@ -72,13 +72,13 @@ for(let i =0; i< estrellaAmarilla.length;i++){
     const objetoLocal = JSON.parse(getLocalStorage);
     let estrellaSrc = estrellaAmarilla[i].parentElement.children[0].children[0]?.src;
 
-    
+
     if (estrellaSrc) {
      
         for(let j in objetoLocal){
-            if(objetoLocal[j].imgCancion === estrellaSrc){
-              
-                estrellaAmarilla[i].parentElement.children[0].parentElement.children[1].src= "../assets/estrellaAmarilla.png"
+            if(objetoLocal[j].imgCancion == estrellaSrc){
+                const currentDirectory = window.location.href.substring(0, window.location.href.lastIndexOf("/"));
+                estrellaAmarilla[i].parentElement.children[0].parentElement.children[1].src=  currentDirectory + "/assets/estrellaAmarilla.png";
             }
         }
   
@@ -88,26 +88,36 @@ for(let i =0; i< estrellaAmarilla.length;i++){
   
 
     estrellaAmarilla[i].addEventListener("click", ()=>{
-        if(estrellaAmarilla[i].src === "http://127.0.0.1:5500/assets/estrella1.png"){
-            const img=estrellaAmarilla[i].parentElement.children[0].children[0].src
-            const getLocalStorage= localStorage.getItem("listaFavorita")
-            if(getLocalStorage){
-                const objetoLocal= JSON.parse(getLocalStorage)
-                objetoLocal.push({imgCancion:img, ...albumesArray[i]})
-                localStorage.setItem("listaFavorita", JSON.stringify(objetoLocal))
-                estrellaAmarilla[i].src="../assets/estrellaAmarilla.png"
-            }else{
-                const setLocalStorage=[{imgCancion:img, ...albumesArray[i]}]
-                localStorage.setItem("listaFavorita", JSON.stringify(setLocalStorage))
-                estrellaAmarilla[i].src="../assets/estrellaAmarilla.png"
-            }
-        }else{
-            const getLocalStorage= localStorage.getItem("listaFavorita")
-            const objetoLocal= JSON.parse(getLocalStorage)
-            const nuevoArray =objetoLocal.filter(el=>el.nombreCancion !== albumesArray[i].nombreCancion)
-            localStorage.setItem("listaFavorita", JSON.stringify(nuevoArray))
-            estrellaAmarilla[i].src = "assets/estrella1.png"
-        }
+     // Get the current directory (URL without the filename)
+const currentDirectory = window.location.href.substring(0, window.location.href.lastIndexOf("/"));
+
+if (estrellaAmarilla[i].src.endsWith("/assets/estrella1.png")) {
+  const img = estrellaAmarilla[i].parentElement.children[0].children[0].src;
+  const getLocalStorage = localStorage.getItem("listaFavorita");
+
+  if (getLocalStorage) {
+    const objetoLocal = JSON.parse(getLocalStorage);
+    objetoLocal.push({ imgCancion: img, ...albumesArray[i] });
+    localStorage.setItem("listaFavorita", JSON.stringify(objetoLocal));
+    estrellaAmarilla[i].src = currentDirectory + "/assets/estrellaAmarilla.png";
+  } else {
+    const setLocalStorage = [{ imgCancion: img, ...albumesArray[i] }];
+    localStorage.setItem("listaFavorita", JSON.stringify(setLocalStorage));
+    estrellaAmarilla[i].src = currentDirectory + "/assets/estrellaAmarilla.png";
+  }
+} else {
+  const getLocalStorage = localStorage.getItem("listaFavorita");
+  const objetoLocal = JSON.parse(getLocalStorage);
+
+  if (objetoLocal) {
+    const nuevoArray = objetoLocal.filter(
+      (el) => el.nombreCancion !== albumesArray[i].nombreCancion
+    );
+    localStorage.setItem("listaFavorita", JSON.stringify(nuevoArray));
+    estrellaAmarilla[i].src = currentDirectory + "/assets/estrella1.png";
+  }
+}
+
 
     })
 }
