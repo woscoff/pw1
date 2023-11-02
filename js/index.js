@@ -88,7 +88,6 @@ for(let i =0; i< estrellaAmarilla.length;i++){
   
 
     estrellaAmarilla[i].addEventListener("click", ()=>{
-     // Get the current directory (URL without the filename)
 const currentDirectory = window.location.href.substring(0, window.location.href.lastIndexOf("/"));
 
 if (estrellaAmarilla[i].src.endsWith("/assets/estrella1.png")) {
