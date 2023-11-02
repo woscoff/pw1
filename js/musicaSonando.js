@@ -1,14 +1,16 @@
-const data = localStorage.getItem("cancionesFavoritas")
-const objetoLocal    = JSON.parse(data)
-const infoArray = localStorage.getItem("informacionArray")
-const info    = JSON.parse(infoArray)
+const url = new URL(window.location.href);
+const id = url.searchParams.get("id");
+const local = localStorage.getItem("informacionArray")
+const data= JSON.parse(local)
+
+const objetoLocal    = data.find(el=>el.id===parseInt(id))
 const contenedorDatos1 = document.querySelector('.columnas.columna1 .contenedor-datos');
 const contenedorDatos2 = document.querySelector('.columnas.columna2 .contenedor-datos');
 const contenedorDatos3 = document.querySelector('.columnas.columna3 .contenedor-datos');
 const contenedorDatos4 = document.querySelector('.columnas.columna4 .contenedor-datos');
 const contenedorDatos5 = document.querySelector('.columnas.columna5 .contenedor-datos');
 
-for (let i = 0; i < objetoLocal.length; i++) {
+for (let i = 0; i < objetoLocal.canciones.length; i++) {
     // Columna 1
     const iconoCasilla = document.createElement('div');
     iconoCasilla.classList.add('icono', 'casilla');
@@ -17,7 +19,7 @@ for (let i = 0; i < objetoLocal.length; i++) {
     imgReproducir.classList.add('img-reproducir');
     imgReproducir.setAttribute('src', '../assets/play.png');
     imgReproducir.setAttribute('alt', '');
-    imgReproducir.setAttribute('id', objetoLocal[i].id);
+    imgReproducir.setAttribute('id', objetoLocal.canciones[i].id);
     iconoCasilla.appendChild(imgReproducir);
     contenedorDatos1.appendChild(iconoCasilla);
 
@@ -30,9 +32,9 @@ for (let i = 0; i < objetoLocal.length; i++) {
     imgEstrellaAmarilla.classList.add('estrellaCanciones');
     imgEstrellaAmarilla.setAttribute('src', '../assets/estrella1.png');
     imgEstrellaAmarilla.setAttribute('alt', '');
-    imgEstrellaAmarilla.setAttribute("id",objetoLocal[i].id)
+    imgEstrellaAmarilla.setAttribute("id",objetoLocal.canciones[i].id)
     const divNombreCancionNombre = document.createElement('div');
-    divNombreCancionNombre.textContent = objetoLocal[i].nombreCancion;
+    divNombreCancionNombre.textContent = objetoLocal.canciones[i].nombreCancion;
 
     divNombreCancion.appendChild(imgEstrellaAmarilla);
     divNombreCancion.appendChild(divNombreCancionNombre);
@@ -48,11 +50,10 @@ for (let i = 0; i < objetoLocal.length; i++) {
     imgEstrellaAmarillaAlbum.classList.add('estrellaCancionesAlbum');
     imgEstrellaAmarillaAlbum.setAttribute('src', '../assets/estrella1.png');
     imgEstrellaAmarillaAlbum.setAttribute('alt', '');
-    imgEstrellaAmarillaAlbum.setAttribute("id",objetoLocal[i].idAlbum)
+    imgEstrellaAmarillaAlbum.setAttribute("id",objetoLocal.id)
 
     const divNombreAlbumNombre = document.createElement('div');
-    const si = info.find(el=>el.id=== objetoLocal[i].idAlbum)
-    divNombreAlbumNombre.textContent = si.nombreAlbum;
+    divNombreAlbumNombre.textContent = objetoLocal.nombreAlbum;
 
     divNombreAlbum.appendChild(imgEstrellaAmarillaAlbum);
     divNombreAlbum.appendChild(divNombreAlbumNombre);
@@ -61,13 +62,13 @@ for (let i = 0; i < objetoLocal.length; i++) {
     // Columna 4
     const divDuracion = document.createElement('div');
     divDuracion.classList.add('tiempo-duracion', 'casilla');
-    divDuracion.textContent = objetoLocal[i].duracion;
+    divDuracion.textContent = objetoLocal.canciones[i].duracion;
     contenedorDatos4.appendChild(divDuracion);
 
     // Columna 5
     const divReproducciones = document.createElement('div');
     divReproducciones.classList.add('cantidad-reproducciones', 'casilla');
-    divReproducciones.textContent = objetoLocal[i].vistas;
+    divReproducciones.textContent = objetoLocal.canciones[i].vistas;
     contenedorDatos5.appendChild(divReproducciones);
 }
 
@@ -75,34 +76,33 @@ const reproduccion = document.getElementsByClassName("img-reproducir")
 for (let i = 0; i < reproduccion.length; i++) {
 
     reproduccion[i].addEventListener('click', function () {
-     
-        let objeto = info[parseInt(reproduccion[i].id)].canciones[parseInt(reproduccion[i].id)]
-        objeto.imagen=info[parseInt(reproduccion[i].id)].imagen
-  
+        let objeto = data[parseInt(id)]
 
+        const info = objeto.canciones.find(el=>el.id === parseInt(reproduccion[i].id))
+        info.imgCancion=objeto.imagen
 
-        localStorage.setItem("reproduciendo", JSON.stringify(objeto));
+        localStorage.setItem("reproduciendo", JSON.stringify(info));
         let imagenReproduciendo=document.getElementsByClassName("albumSonando")[0]
         imagenReproduciendo.src=objeto.imagen
         let albumReproduciendo= document.getElementsByClassName("albumText")[0]
-        albumReproduciendo.innerHTML=objeto.descripcionCancion
+        albumReproduciendo.innerHTML=info.descripcionCancion
     });
   }
-  
   const cancionesFav = document.getElementsByClassName("estrellaCanciones");
   const albumFav = document.getElementsByClassName("estrellaCancionesAlbum");
   const local2 = JSON.parse(localStorage.getItem("cancionesFavoritas")) || [];
-  
   for (let i = 0; i < cancionesFav.length; i++) {
-    const datos = local2.find(el=>el.id === parseInt(cancionesFav[i].id))
+    const datos = local2.find(el=>el.id === parseInt(cancionesFav[i].id) && el.idAlbum === parseInt(albumFav[1].id) )
     if(datos){
         cancionesFav[i].src = '../assets/estrellaAmarilla.png'
     }
 
     cancionesFav[i].addEventListener('click', function () {
       const local = JSON.parse(localStorage.getItem("cancionesFavoritas")) || [];
-      const cancion = objetoLocal.find(el => el.id === parseInt(cancionesFav[i].id));
-      const cancionExistente = local.find(item =>item.id === cancion.id);
+      const cancion = objetoLocal.canciones.find(el => el.id === parseInt(cancionesFav[i].id));
+
+      const cancionExistente = local.find(item => parseInt(item.idAlbum) === objetoLocal.id && item.id === cancion.id);
+
       if (!cancionExistente) {
         local.push({ idAlbum: objetoLocal.id, ...cancion });
         localStorage.setItem("cancionesFavoritas", JSON.stringify(local));
@@ -117,23 +117,21 @@ for (let i = 0; i < reproduccion.length; i++) {
 
   for (let i = 0; i < albumFav.length; i++) {
     let local = JSON.parse(localStorage.getItem("albumFavorito")) || [];
-    const cancionExistente = info.find(el=>el.id === parseInt(albumFav[i].id))
-    const data = local.find(el=>el.id=== cancionExistente.id)
-
-    if (data) {
+    let datos = local.find(el => el.id === parseInt(albumFav[i].id))
+  
+    if (datos) {
       albumFav[i].src = '../assets/estrellaAmarilla.png';
     }
   
     albumFav[i].addEventListener('click', function () {
       let local = JSON.parse(localStorage.getItem("albumFavorito")) || [];
-      const cancionExistente = info.find(el=>el.id === parseInt(albumFav[i].id))
-      const data = local.find(el=>el.id=== cancionExistente.id)
-
-      if (!data) {
-        local.push( cancionExistente );
+      const cancionExistente = local.find(item => item.id === parseInt(albumFav[i].id));
+  
+      if (!cancionExistente) {
+        local.push({ ...objetoLocal });
         albumFav[i].src = '../assets/estrellaAmarilla.png';
       } else {
-        let data = local.filter(el => el.id !== cancionExistente.id);
+        let data = local.filter(el => el.id !== objetoLocal.id);
         albumFav[i].src = '../assets/estrella1.png';
         local = data;
       }
