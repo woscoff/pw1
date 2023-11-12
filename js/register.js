@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     localStorage.setItem('usuarios', JSON.stringify(usuariosRegistrados));
 
                     alert('Registro exitoso');
-                    window.location.href = '../index.html'; 
+                    window.location.href = '../views/home.html'; 
                 } else {
                     alert('Este usuario ya existe');
                 }

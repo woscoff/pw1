@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="../css/buscar.css"> -->
     <link rel="stylesheet" href="../css/index1.css">
-    <link rel="stylesheet" href="../css/favoritas1.css">
-    <title>mis canciones favoritas</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -16,13 +15,11 @@
         <section class="item1 caja header">
             <header class="header_container">
                 <div class="header-titulo">
-                    <h1>canciones</h1>
+                    <h1>spotilam</h1>
                 </div>
                 <div class="header-perfil">
                     <div class="header-perfil_usuario">
-                        <div class="usuario">
-                            <h3>usuario</h3>
-                        </div>
+                        <div class="usuario"><h3>usuario</h3></div>
                         <div class="cerar-sesion"><a href="../index.html">cerrar sesion</a></div>
                     </div>
                     <div class="header-perfil_contenedor-img">
@@ -60,53 +57,12 @@
 
             <main class="main_container">
                 <section class="albumes-container">
-                    <div class="columnas columna1">
-                        <div class="icono-campo campo"><h1></h1>  </div>
-                        <div class="contenedor-datos">
-                  
-                        </div>
-                    </div>
-                    <div class="columnas  columna2">
-                        <div class="cancion campo">
-                            <h2>cancion</h2>
-                        </div>
-                        <div class="contenedor-datos">
-                       
-                        </div>
-                    </div>
-                    <div class="columnas  columna3">
-                        <div class="album campo">
-                            <h2>
-                                album
-                            </h2>
-                        </div>
-                        <div class="contenedor-datos">
-                   
-                        </div>
-                    </div>
-                    <div class="columnas  columna4">
-                        <div class="duracion campo">
-                            <h2>duracion</h2>
-                        </div>
-                        <div class="contenedor-datos">
-                    
-                        </div>
-                    </div>
-                    <div class="columnas  columna5">
-                        <div class="reproducciones campo">
-                            <h2>reproducciones</h2>
-                        </div>
-                        <div class="contenedor-datos">
-             
-                        </div>
-                    </div>
-
-
-
-
-
+              
                 </section>
-
+                <!-- <audio controls class="audio">
+                <source src="mi_audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio> -->
                 <audio controls class="audio">
                     <source src="mi_audio.mp3" type="audio/mpeg">
                 </audio>
@@ -115,8 +71,8 @@
         <section class="item4 caja aside">
             <div class="contenedorAlbumDescripcion">
                 <div class="imgContainerSonando">
-                    <img src="../assets/fooFightersAlbum.jpg" alt="" class="albumSonando">
-                    <img src="../assets/estrellaAmarilla.png" alt="" class="favAlbumSonando">
+                    <img src="./assets/fooFightersAlbum.jpg" alt="" class="albumSonando">
+                    <img src="./assets/estrellaAmarilla.png" alt="" class="favAlbumSonando">
                 </div>
                 <div>
                     <p class="albumText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit omnis quaerat, eum
@@ -156,8 +112,10 @@
 
 
     </div>
-    <script src="../js/musicaSonando.js"></script>
-    <script src="../js/MusicaEscuchando.js"></script>
+    <script src="./js/informacionArray.js" ></script>
+    <script src="./js/musicaSonandoLogin.js" ></script>
+    <script src="./js/navBar.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

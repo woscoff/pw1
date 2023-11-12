@@ -43,6 +43,6 @@ buttonContinuar.addEventListener("click", ()=>{
     const data =localStorage.getItem("usuarios")
     const variable= JSON.parse(data)
     
-    variable ? window.location.href = `../views/login.html`: window.location.href = `../index.html`
+    variable ? window.location.href = `../index.html`: window.location.href = `../views/home.html`
    
 })
