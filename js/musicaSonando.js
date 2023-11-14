@@ -10,6 +10,8 @@ const contenedorDatos3 = document.querySelector('.columnas.columna3 .contenedor-
 const contenedorDatos4 = document.querySelector('.columnas.columna4 .contenedor-datos');
 const contenedorDatos5 = document.querySelector('.columnas.columna5 .contenedor-datos');
 
+
+
 for (let i = 0; i < objetoLocal.canciones.length; i++) {
     // Columna 1
     const iconoCasilla = document.createElement('div');
@@ -76,16 +78,23 @@ const reproduccion = document.getElementsByClassName("img-reproducir")
 for (let i = 0; i < reproduccion.length; i++) {
 
     reproduccion[i].addEventListener('click', function () {
-        let objeto = data[parseInt(id)]
-
+      const local2 = JSON.parse(localStorage.getItem("cancionesFavoritas")) || [];
+        let objeto = data.find(el=>el.id=== parseInt(id))
         const info = objeto.canciones.find(el=>el.id === parseInt(reproduccion[i].id))
         info.imgCancion=objeto.imagen
-
+        info.idAlbum=objeto.id
         localStorage.setItem("reproduciendo", JSON.stringify(info));
         let imagenReproduciendo=document.getElementsByClassName("albumSonando")[0]
         imagenReproduciendo.src=objeto.imagen
         let albumReproduciendo= document.getElementsByClassName("albumText")[0]
         albumReproduciendo.innerHTML=info.descripcionCancion
+        let estrella = document.getElementsByClassName("favAlbumSonando")[0]
+        const datos = local2.find(el=>el.id === parseInt(cancionesFav[i].id) && el.idAlbum === parseInt(albumFav[1].id) )
+        if(datos){
+          estrella.src = '../assets/estrellaAmarilla.png'
+        }else{
+          estrella.src = '../assets/estrella1.png'
+        }
     });
   }
   const cancionesFav = document.getElementsByClassName("estrellaCanciones");
@@ -100,7 +109,8 @@ for (let i = 0; i < reproduccion.length; i++) {
     cancionesFav[i].addEventListener('click', function () {
       const local = JSON.parse(localStorage.getItem("cancionesFavoritas")) || [];
       const cancion = objetoLocal.canciones.find(el => el.id === parseInt(cancionesFav[i].id));
-
+  
+      cancion.idAlbum=objetoLocal.id
       const cancionExistente = local.find(item => parseInt(item.idAlbum) === objetoLocal.id && item.id === cancion.id);
 
       if (!cancionExistente) {

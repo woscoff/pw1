@@ -1,6 +1,6 @@
 const albums = [
     {
-        "id": 1,
+        "id": 0,
         "nombreAlbum": "Ramones",
         "imagen": "../assets/ramonesAlbum.jpg",
         "canciones": [
@@ -28,7 +28,7 @@ const albums = [
         ]
     },
     {
-        "id": 2,
+        "id": 1,
         "nombreAlbum": "The Beatles",
         "imagen": "../assets/beatlesAlbum.jpg",
         "canciones": [
@@ -70,7 +70,7 @@ const albums = [
         ]
     },
     {
-        "id": 3,
+        "id": 2,
         "nombreAlbum": "Queen",
         "imagen": "../assets/queenAlbum.jpeg",
         "canciones": [
@@ -112,7 +112,7 @@ const albums = [
         ]
     },
     {
-        "id": 4,
+        "id": 3,
         "nombreAlbum": "Red Hot Chili Peppers",
         "imagen": "../assets/redhotAlbum.jpg",
         "canciones": [
@@ -154,7 +154,7 @@ const albums = [
         ]
     },
     {
-        "id": 5,
+        "id": 4,
         "nombreAlbum": "Foo Fighter",
         "imagen": "../assets/fooFightersAlbum.jpg",
         "canciones": [
@@ -196,7 +196,7 @@ const albums = [
         ]
     },
     {
-        "id": 6,
+        "id": 5,
         "nombreAlbum": "Pink Floyd",
         "imagen": "../assets/pinkFloydAlbum.svg",
         "canciones": [
@@ -238,7 +238,7 @@ const albums = [
         ]
     },
     {
-        "id": 7,
+        "id": 6,
         "nombreAlbum": "Nirvana",
         "imagen": "../assets/colplay.jpg",
         "canciones": [
@@ -280,7 +280,7 @@ const albums = [
         ]
     },
     {
-        "id": 8,
+        "id": 7,
         "nombreAlbum": "U2",
         "imagen": "../assets/colplay.jpg",
         "canciones": [

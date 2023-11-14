@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const nombre = document.querySelector('input[name="nombre"]').value;
         let contraseña = document.querySelector('input[name="contraseña"]').value;
         const repetirContraseña = document.querySelector('input[name="repetirContraseña"]').value;
-
+        let email = document.querySelector('input[name="email"]').value;
+        let fechaNacimiento= document.querySelector('input[name="fechaNacimiento"]').value;
         if (nombre && contraseña && repetirContraseña) {
             if (contraseña === repetirContraseña) {
                 contraseña = transformarContraseña(contraseña);
@@ -19,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (!usuarioExistente) {
                     const nuevoUsuario = {
                         nombre: nombre,
-                        contraseña: contraseña
+                        contraseña: contraseña,
+                        email:email,
+                        fechaNacimiento:fechaNacimiento
                     };
 
                     usuariosRegistrados.push(nuevoUsuario);

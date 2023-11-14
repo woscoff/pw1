@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (usuarioExistente) {
             alert('Inicio de sesión exitoso');
-            window.location.href = '../views/home.html'; 
+            window.location.href = './views/home.html'; 
         } else {
             alert('Credenciales incorrectas. Por favor, verifica tu usuario y contraseña.');
         }
