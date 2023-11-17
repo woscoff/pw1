@@ -68,7 +68,17 @@ function validarContraseñas() {
 function mostrarError(mensaje) {
     titleHeader.innerHTML = mensaje;
 }
+function deshacerTransformacion(contraseñaTransformada) {
+    const mitad = Math.ceil(contraseñaTransformada.length / 2);
+    const primeraMitad = contraseñaTransformada.slice(mitad);
+    const segundaMitad = contraseñaTransformada.slice(0, mitad);
+
+    return primeraMitad + segundaMitad;
+}
+
 
 inputNombre.value =usuarios.nombre
 fechaNacimiento.value=usuarios.fechaNacimiento
 email.value=usuarios.email
+inputContra.value= deshacerTransformacion(usuarios.contraseña)
+inputContra2.value=deshacerTransformacion(usuarios.contraseña)
