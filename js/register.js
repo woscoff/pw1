@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function transformarContraseña(contraseña) {
-        const mitad = Math.ceil(contraseña.length / 2);
+        const mitad = Math.floor(contraseña.length / 2);
         const primeraMitad = contraseña.slice(0, mitad);
         const segundaMitad = contraseña.slice(mitad);
-
+    
         return segundaMitad + primeraMitad;
     }
 });

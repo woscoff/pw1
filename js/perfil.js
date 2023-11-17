@@ -11,10 +11,10 @@ const user = document.getElementsByClassName("usuario")[0];
 const button = document.getElementsByClassName("button")[1];
 const usuarios = JSON.parse(localStorage.getItem("usuarios"))[0]
 
-function transformarContraseña(contraseñas) {
-    const mitad = Math.ceil(contraseñas.length / 2);
-    const primeraMitad = contraseñas.slice(0, mitad);
-    const segundaMitad = contraseñas .slice(mitad);
+function transformarContraseña(contraseña) {
+    const mitad = Math.floor(contraseña.length / 2);
+    const primeraMitad = contraseña.slice(0, mitad);
+    const segundaMitad = contraseña.slice(mitad);
 
     return segundaMitad + primeraMitad;
 }
@@ -74,6 +74,7 @@ function deshacerTransformacion(contraseñaTransformada) {
     const segundaMitad = contraseñaTransformada.slice(0, mitad);
 
     return primeraMitad + segundaMitad;
+
 }
 
 

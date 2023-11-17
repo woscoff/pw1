@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const mitad = Math.ceil(contraseñaTransformada.length / 2);
         const primeraMitad = contraseñaTransformada.slice(mitad);
         const segundaMitad = contraseñaTransformada.slice(0, mitad);
-
+    
         return primeraMitad + segundaMitad;
+    
     }
 });
